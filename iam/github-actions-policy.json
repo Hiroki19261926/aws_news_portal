@@ -64,6 +64,18 @@
             "Resource": "*"
         },
         {
+            "Sid": "S3FullAccess",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudFrontFullAccess",
+            "Effect": "Allow",
+            "Action": "cloudfront:*",
+            "Resource": "*"
+        },
+        {
             "Sid": "S3ForTfstate",
             "Effect": "Allow",
             "Action": [

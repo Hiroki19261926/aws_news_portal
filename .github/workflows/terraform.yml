@@ -14,6 +14,13 @@ on:
       - 'terraform/**'
       - 'lambda/**'
 
+# -----------------------------------------------------------------------------
+# 環境変数（Minecraftリポジトリと形式を統一）
+# -----------------------------------------------------------------------------
+env:
+  TF_VERSION: "1.6.0"
+  AWS_REGION: "ap-northeast-1"
+
 jobs:
   terraform:
     name: Terraform
@@ -29,18 +36,42 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.6.0
+          terraform_version: ${{ env.TF_VERSION }}
 
+      # -----------------------------------------------------------------------------
+      # AWS認証: IAMユーザーのアクセスキーを使用
+      # GitHub SecretsにAWS_ACCESS_KEY_IDとAWS_SECRET_ACCESS_KEYを設定すること
+      # -----------------------------------------------------------------------------
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-1
+          aws-region: ${{ env.AWS_REGION }}
 
-      - name: Terraform Format
-        run: terraform fmt -check
+      # -----------------------------------------------------------------------------
+      # Python環境セットアップ（Lambda依存関係インストール用）
+      # -----------------------------------------------------------------------------
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
+      # -----------------------------------------------------------------------------
+      # Lambda依存関係インストール
+      # デプロイ前にrequirements.txtの依存関係をLambdaフォルダにインストール
+      # -----------------------------------------------------------------------------
+      - name: Install Lambda Dependencies
+        run: |
+          pip install -r ../lambda/api_aggregator/requirements.txt -t ../lambda/api_aggregator/
+
+      - name: Terraform Format Check
+        run: terraform fmt -check -recursive
+
+      # -----------------------------------------------------------------------------
+      # Terraform Init
+      # バックエンド設定はGitHub Secretsで管理
+      # -----------------------------------------------------------------------------
       - name: Terraform Init
         run: |
           terraform init \
@@ -50,13 +81,21 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
+      # -----------------------------------------------------------------------------
+      # Terraform Plan
+      # PRとpush両方で実行するように変更（Minecraftと統一）
+      # -----------------------------------------------------------------------------
       - name: Terraform Plan
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
         env:
           TF_VAR_steam_api_key: ${{ secrets.STEAM_API_KEY }}
           TF_VAR_wordnik_api_key: ${{ secrets.WORDNIK_API_KEY }}
         run: terraform plan -no-color
 
+      # -----------------------------------------------------------------------------
+      # Terraform Apply
+      # mainブランチへのpush時のみ実行
+      # -----------------------------------------------------------------------------
       - name: Terraform Apply
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:

@@ -63,8 +63,8 @@ resource "aws_cloudfront_distribution" "main" {
     }
 
     min_ttl     = 0
-    default_ttl = 86400    # 1日
-    max_ttl     = 604800   # 7日
+    default_ttl = 86400  # 1日
+    max_ttl     = 604800 # 7日
   }
 
   # ---------------------------------------------------------------------------
@@ -87,8 +87,8 @@ resource "aws_cloudfront_distribution" "main" {
     }
 
     min_ttl     = 0
-    default_ttl = 1200   # 20分
-    max_ttl     = 3600   # 1時間
+    default_ttl = 1200 # 20分
+    max_ttl     = 3600 # 1時間
   }
 
   # ---------------------------------------------------------------------------

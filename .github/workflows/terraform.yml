@@ -7,15 +7,17 @@ on:
     paths:
       - 'terraform/**'
       - 'lambda/**'
+      - 'frontend/**'
   pull_request:
     branches:
       - main
     paths:
       - 'terraform/**'
       - 'lambda/**'
+      - 'frontend/**'
 
 # -----------------------------------------------------------------------------
-# 環境変数（Minecraftリポジトリと形式を統一）
+# 環境変数
 # -----------------------------------------------------------------------------
 env:
   TF_VERSION: "1.6.0"
@@ -198,6 +200,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: terraform-plan
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    outputs:
+      s3_bucket: ${{ steps.outputs.outputs.s3_bucket }}
+      cloudfront_id: ${{ steps.outputs.outputs.cloudfront_id }}
     defaults:
       run:
         working-directory: terraform
@@ -218,6 +223,7 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: ${{ env.TF_VERSION }}
+          terraform_wrapper: false
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -239,3 +245,56 @@ jobs:
         run: |
           terraform apply -auto-approve
           echo "✅ Terraform Apply完了"
+
+      - name: Get Terraform Outputs
+        id: outputs
+        run: |
+          echo "s3_bucket=$(terraform output -raw s3_bucket_name)" >> $GITHUB_OUTPUT
+          echo "cloudfront_id=$(terraform output -raw cloudfront_distribution_id)" >> $GITHUB_OUTPUT
+          echo "site_url=$(terraform output -raw site_url)" >> $GITHUB_OUTPUT
+          echo ""
+          echo "=========================================="
+          echo "🌐 サイトURL: $(terraform output -raw site_url)"
+          echo "=========================================="
+
+  # ===========================================================================
+  # Job 7: フロントエンドをS3にデプロイ
+  # ===========================================================================
+  deploy-frontend:
+    name: Deploy Frontend to S3
+    runs-on: ubuntu-latest
+    needs: terraform-apply
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Restore repository cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .
+          key: repo-${{ github.sha }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Upload frontend to S3
+        run: |
+          aws s3 sync frontend/ s3://${{ needs.terraform-apply.outputs.s3_bucket }}/ --delete
+          echo "✅ フロントエンドをS3にアップロード完了"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ needs.terraform-apply.outputs.cloudfront_id }} \
+            --paths "/*"
+          echo "✅ CloudFrontキャッシュを削除完了"
+
+      - name: Show site URL
+        run: |
+          echo ""
+          echo "=========================================="
+          echo "🎉 デプロイ完了！"
+          echo "🌐 サイトURL: https://$(aws cloudfront get-distribution --id ${{ needs.terraform-apply.outputs.cloudfront_id }} --query 'Distribution.DomainName' --output text)"
+          echo "=========================================="

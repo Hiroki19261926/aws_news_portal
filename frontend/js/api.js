@@ -72,6 +72,7 @@ const MOCK_DATA = {
         quiz: {
             question: "What is the meaning of 'negotiate'?",
             correct_word: "negotiate",
+            example: "We need to _______ the contract terms.",
             options: [
                 { label: "無視する", word: "ignore", is_correct: false },
                 { label: "交渉する", word: "negotiate", is_correct: true },

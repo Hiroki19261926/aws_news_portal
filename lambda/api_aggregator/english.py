@@ -1,44 +1,29 @@
 import requests
 import random
 import json
+import os
+import re
 
-# ビジネス英単語リスト (30語以上)
-WORDS = [
-    {"word": "agenda", "meaning_ja": "協議事項、議題"},
-    {"word": "minutes", "meaning_ja": "議事録"},
-    {"word": "consensus", "meaning_ja": "合意"},
-    {"word": "negotiate", "meaning_ja": "交渉する"},
-    {"word": "proposal", "meaning_ja": "提案"},
-    {"word": "strategy", "meaning_ja": "戦略"},
-    {"word": "implement", "meaning_ja": "実行する、導入する"},
-    {"word": "deadline", "meaning_ja": "締め切り"},
-    {"word": "milestone", "meaning_ja": "マイルストーン、節目"},
-    {"word": "objective", "meaning_ja": "目的、目標"},
-    {"word": "revenue", "meaning_ja": "収益"},
-    {"word": "profit", "meaning_ja": "利益"},
-    {"word": "budget", "meaning_ja": "予算"},
-    {"word": "asset", "meaning_ja": "資産"},
-    {"word": "liability", "meaning_ja": "負債"},
-    {"word": "equity", "meaning_ja": "株式、自己資本"},
-    {"word": "dividend", "meaning_ja": "配当"},
-    {"word": "merger", "meaning_ja": "合併"},
-    {"word": "acquisition", "meaning_ja": "買収"},
-    {"word": "stakeholder", "meaning_ja": "利害関係者"},
-    {"word": "incentive", "meaning_ja": "報奨、インセンティブ"},
-    {"word": "productivity", "meaning_ja": "生産性"},
-    {"word": "efficiency", "meaning_ja": "効率"},
-    {"word": "collaboration", "meaning_ja": "協力、共同作業"},
-    {"word": "innovation", "meaning_ja": "革新"},
-    {"word": "benchmark", "meaning_ja": "基準、指標"},
-    {"word": "forecast", "meaning_ja": "予測"},
-    {"word": "quarter", "meaning_ja": "四半期"},
-    {"word": "fiscal", "meaning_ja": "会計の、財政の"},
-    {"word": "compliance", "meaning_ja": "法令遵守"},
-    {"word": "regulation", "meaning_ja": "規制"},
-    {"word": "audit", "meaning_ja": "監査"},
-    {"word": "recruit", "meaning_ja": "採用する"},
-    {"word": "turnover", "meaning_ja": "離職率、売上高"}
-]
+def load_words():
+    """
+    JSONファイルから単語リストを読み込む
+    """
+    try:
+        path = os.path.join(os.path.dirname(__file__), 'business_words.json')
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get('words', [])
+    except Exception as e:
+        print(f"Error loading words: {e}")
+        # Fallback minimal list to prevent crash
+        return [
+            {"word": "agenda", "meaning_ja": "協議事項", "example": "The agenda is set."},
+            {"word": "minutes", "meaning_ja": "議事録", "example": "Take the minutes."},
+            {"word": "consensus", "meaning_ja": "合意", "example": "We reached a consensus."},
+            {"word": "negotiate", "meaning_ja": "交渉する", "example": "We must negotiate."}
+        ]
+
+WORDS = load_words()
 
 def get_word_details(word):
     """
@@ -90,16 +75,24 @@ def get_word_of_the_day():
     """
     ランダムに単語を選び、詳細情報を付加して返す
     """
+    if not WORDS:
+        return {"error": "No words available"}
+
     word_entry = random.choice(WORDS)
     details = get_word_details(word_entry['word'])
 
     result = {
         "word": word_entry['word'],
-        "meaning_ja": word_entry['meaning_ja']
+        "meaning_ja": word_entry['meaning_ja'],
+        "example": word_entry.get('example')
     }
 
     if details:
+        # APIの詳細で更新するが、ローカルの例文がある場合は優先する
+        local_example = result.get('example')
         result.update(details)
+        if local_example:
+            result['example'] = local_example
 
     return result
 
@@ -117,9 +110,17 @@ def get_quiz():
     options = others + [correct]
     random.shuffle(options)
 
+    # 例文の処理 (単語を隠す)
+    example_hint = ""
+    if correct.get('example'):
+        word_esc = re.escape(correct['word'])
+        # 大文字小文字を無視して置換
+        example_hint = re.sub(word_esc, '_______', correct['example'], flags=re.IGNORECASE)
+
     return {
         "question": f"What is the meaning of '{correct['word']}'?",
         "correct_word": correct['word'], # フロントでの確認用
+        "example": example_hint,
         "options": [
             {"label": w['meaning_ja'], "word": w['word'], "is_correct": (w['word'] == correct['word'])}
             for w in options

@@ -1,0 +1,4918 @@
+{
+  "words": [
+    {
+      "word": "delegate",
+      "category": "一般ビジネス",
+      "meaning_ja": "委任する、権限を与える",
+      "difficulty": "intermediate",
+      "example": "She delegates simple tasks to her assistant."
+    },
+    {
+      "word": "negotiate",
+      "category": "交渉・契約",
+      "meaning_ja": "交渉する",
+      "difficulty": "basic",
+      "example": "We need to negotiate the contract terms."
+    },
+    {
+      "word": "agenda",
+      "category": "Meetings",
+      "meaning_ja": "協議事項、議題",
+      "difficulty": "basic",
+      "example": "The agenda for the meeting was circulated yesterday."
+    },
+    {
+      "word": "consensus",
+      "category": "Meetings",
+      "meaning_ja": "合意",
+      "difficulty": "intermediate",
+      "example": "We need to reach a consensus before moving forward."
+    },
+    {
+      "word": "prioritize",
+      "category": "一般ビジネス",
+      "meaning_ja": "優先順位をつける",
+      "difficulty": "intermediate",
+      "example": "You must prioritize your tasks."
+    },
+    {
+      "word": "minutes",
+      "category": "Meetings",
+      "meaning_ja": "議事録",
+      "difficulty": "basic",
+      "example": "Can you take the minutes during the discussion?"
+    },
+    {
+      "word": "adjourn",
+      "category": "Meetings",
+      "meaning_ja": "休会する、延期する",
+      "difficulty": "advanced",
+      "example": "The meeting was adjourned until next week."
+    },
+    {
+      "word": "proposal",
+      "category": "交渉・契約",
+      "meaning_ja": "提案",
+      "difficulty": "basic",
+      "example": "The proposal was accepted."
+    },
+    {
+      "word": "terms",
+      "category": "交渉・契約",
+      "meaning_ja": "条件",
+      "difficulty": "basic",
+      "example": "We agreed to the terms."
+    },
+    {
+      "word": "agreement",
+      "category": "Legal",
+      "meaning_ja": "合意",
+      "difficulty": "basic",
+      "example": "We signed the agreement yesterday."
+    },
+    {
+      "word": "milestone",
+      "category": "プロジェクト",
+      "meaning_ja": "マイルストーン、節目",
+      "difficulty": "intermediate",
+      "example": "This is a significant milestone."
+    },
+    {
+      "word": "deadline",
+      "category": "プロジェクト",
+      "meaning_ja": "締め切り",
+      "difficulty": "basic",
+      "example": "The deadline is tomorrow."
+    },
+    {
+      "word": "deliverable",
+      "category": "プロジェクト",
+      "meaning_ja": "成果物",
+      "difficulty": "advanced",
+      "example": "The key deliverable is the report."
+    },
+    {
+      "word": "scope",
+      "category": "プロジェクト",
+      "meaning_ja": "範囲",
+      "difficulty": "intermediate",
+      "example": "This is out of scope."
+    },
+    {
+      "word": "assess",
+      "category": "評価・報告",
+      "meaning_ja": "評価する、査定する",
+      "difficulty": "intermediate",
+      "example": "We need to assess the damage."
+    },
+    {
+      "word": "evaluate",
+      "category": "General",
+      "meaning_ja": "評価する",
+      "difficulty": "intermediate",
+      "example": "Evaluate the results."
+    },
+    {
+      "word": "feedback",
+      "category": "HR",
+      "meaning_ja": "フィードバック",
+      "difficulty": "basic",
+      "example": "Constructive feedback helps us improve."
+    },
+    {
+      "word": "summary",
+      "category": "評価・報告",
+      "meaning_ja": "要約",
+      "difficulty": "basic",
+      "example": "Read the executive summary."
+    },
+    {
+      "word": "implement",
+      "category": "一般ビジネス",
+      "meaning_ja": "実行する、導入する",
+      "difficulty": "intermediate",
+      "example": "We will implement the new system."
+    },
+    {
+      "word": "strategy",
+      "category": "Management",
+      "meaning_ja": "戦略",
+      "difficulty": "intermediate",
+      "example": "Our marketing strategy needs to be updated."
+    },
+    {
+      "word": "motion",
+      "category": "Meetings",
+      "meaning_ja": "動議",
+      "difficulty": "advanced",
+      "example": "I move the motion to adjourn the meeting."
+    },
+    {
+      "word": "chair",
+      "category": "Meetings",
+      "meaning_ja": "議長を務める",
+      "difficulty": "intermediate",
+      "example": "Who will chair the session this afternoon?"
+    },
+    {
+      "word": "quorum",
+      "category": "Meetings",
+      "meaning_ja": "定足数",
+      "difficulty": "advanced",
+      "example": "We cannot vote as we do not have a quorum."
+    },
+    {
+      "word": "resolution",
+      "category": "Meetings",
+      "meaning_ja": "決議",
+      "difficulty": "intermediate",
+      "example": "The board passed a resolution to increase the budget."
+    },
+    {
+      "word": "objective",
+      "category": "Management",
+      "meaning_ja": "目的、目標",
+      "difficulty": "basic",
+      "example": "The main objective is to increase sales."
+    },
+    {
+      "word": "tactic",
+      "category": "Management",
+      "meaning_ja": "戦術",
+      "difficulty": "intermediate",
+      "example": "We tried various tactics to attract new customers."
+    },
+    {
+      "word": "mission",
+      "category": "Management",
+      "meaning_ja": "使命",
+      "difficulty": "basic",
+      "example": "Our mission is to provide high-quality services."
+    },
+    {
+      "word": "vision",
+      "category": "Management",
+      "meaning_ja": "展望、ビジョン",
+      "difficulty": "basic",
+      "example": "The CEO shared his vision for the company's future."
+    },
+    {
+      "word": "core value",
+      "category": "Management",
+      "meaning_ja": "核心的価値観",
+      "difficulty": "intermediate",
+      "example": "Integrity is one of our core values."
+    },
+    {
+      "word": "culture",
+      "category": "Management",
+      "meaning_ja": "企業文化",
+      "difficulty": "basic",
+      "example": "The company culture encourages innovation."
+    },
+    {
+      "word": "diversity",
+      "category": "HR",
+      "meaning_ja": "多様性",
+      "difficulty": "intermediate",
+      "example": "We value diversity in our workplace."
+    },
+    {
+      "word": "inclusion",
+      "category": "HR",
+      "meaning_ja": "包摂、インクルージョン",
+      "difficulty": "intermediate",
+      "example": "Inclusion is key to a healthy team environment."
+    },
+    {
+      "word": "remote work",
+      "category": "HR",
+      "meaning_ja": "在宅勤務",
+      "difficulty": "basic",
+      "example": "Many employees prefer remote work options."
+    },
+    {
+      "word": "telecommute",
+      "category": "HR",
+      "meaning_ja": "在宅勤務する",
+      "difficulty": "advanced",
+      "example": "She telecommutes three days a week."
+    },
+    {
+      "word": "hybrid",
+      "category": "HR",
+      "meaning_ja": "ハイブリッド型の",
+      "difficulty": "intermediate",
+      "example": "We adopted a hybrid work model."
+    },
+    {
+      "word": "flexible",
+      "category": "HR",
+      "meaning_ja": "柔軟な",
+      "difficulty": "basic",
+      "example": "We offer flexible working hours."
+    },
+    {
+      "word": "overtime",
+      "category": "HR",
+      "meaning_ja": "残業",
+      "difficulty": "basic",
+      "example": "He worked a lot of overtime last month."
+    },
+    {
+      "word": "shift",
+      "category": "HR",
+      "meaning_ja": "交代勤務",
+      "difficulty": "basic",
+      "example": "I am on the night shift this week."
+    },
+    {
+      "word": "leave",
+      "category": "HR",
+      "meaning_ja": "休暇",
+      "difficulty": "basic",
+      "example": "She is on maternity leave."
+    },
+    {
+      "word": "sabbatical",
+      "category": "HR",
+      "meaning_ja": "長期休暇",
+      "difficulty": "advanced",
+      "example": "Professor Smith is taking a sabbatical year."
+    },
+    {
+      "word": "resign",
+      "category": "HR",
+      "meaning_ja": "辞職する",
+      "difficulty": "intermediate",
+      "example": "He decided to resign from his position."
+    },
+    {
+      "word": "retire",
+      "category": "HR",
+      "meaning_ja": "退職する",
+      "difficulty": "basic",
+      "example": "She plans to retire at 65."
+    },
+    {
+      "word": "promote",
+      "category": "HR",
+      "meaning_ja": "昇進させる",
+      "difficulty": "intermediate",
+      "example": "He was promoted to manager."
+    },
+    {
+      "word": "demote",
+      "category": "HR",
+      "meaning_ja": "降格させる",
+      "difficulty": "advanced",
+      "example": "Unfortunately, he was demoted due to poor performance."
+    },
+    {
+      "word": "transfer",
+      "category": "HR",
+      "meaning_ja": "転勤させる",
+      "difficulty": "basic",
+      "example": "She was transferred to the London branch."
+    },
+    {
+      "word": "lay off",
+      "category": "HR",
+      "meaning_ja": "一時解雇する",
+      "difficulty": "intermediate",
+      "example": "The factory had to lay off 100 workers."
+    },
+    {
+      "word": "fire",
+      "category": "HR",
+      "meaning_ja": "解雇する",
+      "difficulty": "basic",
+      "example": "He was fired for misconduct."
+    },
+    {
+      "word": "dismiss",
+      "category": "HR",
+      "meaning_ja": "解雇する、却下する",
+      "difficulty": "intermediate",
+      "example": "The appeal was dismissed."
+    },
+    {
+      "word": "recruit",
+      "category": "HR",
+      "meaning_ja": "採用する",
+      "difficulty": "intermediate",
+      "example": "We are recruiting new graduates."
+    },
+    {
+      "word": "hire",
+      "category": "HR",
+      "meaning_ja": "雇う",
+      "difficulty": "basic",
+      "example": "They hired a new consultant."
+    },
+    {
+      "word": "onboard",
+      "category": "HR",
+      "meaning_ja": "新人研修をする",
+      "difficulty": "intermediate",
+      "example": "We need to onboard the new hires quickly."
+    },
+    {
+      "word": "train",
+      "category": "HR",
+      "meaning_ja": "訓練する",
+      "difficulty": "basic",
+      "example": "Staff are trained in customer service."
+    },
+    {
+      "word": "mentor",
+      "category": "HR",
+      "meaning_ja": "指導する",
+      "difficulty": "intermediate",
+      "example": "Senior staff mentor junior employees."
+    },
+    {
+      "word": "performance",
+      "category": "HR",
+      "meaning_ja": "業績、成績",
+      "difficulty": "basic",
+      "example": "Her performance has been outstanding."
+    },
+    {
+      "word": "appraisal",
+      "category": "HR",
+      "meaning_ja": "査定、評価",
+      "difficulty": "advanced",
+      "example": "I have my annual performance appraisal tomorrow."
+    },
+    {
+      "word": "salary",
+      "category": "HR",
+      "meaning_ja": "給料",
+      "difficulty": "basic",
+      "example": "The salary is competitive."
+    },
+    {
+      "word": "wage",
+      "category": "HR",
+      "meaning_ja": "賃金",
+      "difficulty": "basic",
+      "example": "Minimum wage has increased."
+    },
+    {
+      "word": "compensation",
+      "category": "HR",
+      "meaning_ja": "報酬、補償",
+      "difficulty": "intermediate",
+      "example": "The total compensation package includes stock options."
+    },
+    {
+      "word": "benefit",
+      "category": "HR",
+      "meaning_ja": "福利厚生",
+      "difficulty": "basic",
+      "example": "Health insurance is a key benefit."
+    },
+    {
+      "word": "perk",
+      "category": "HR",
+      "meaning_ja": "特典",
+      "difficulty": "intermediate",
+      "example": "Free coffee is a nice perk."
+    },
+    {
+      "word": "bonus",
+      "category": "HR",
+      "meaning_ja": "ボーナス",
+      "difficulty": "basic",
+      "example": "We received a Christmas bonus."
+    },
+    {
+      "word": "incentive",
+      "category": "HR",
+      "meaning_ja": "報奨",
+      "difficulty": "intermediate",
+      "example": "Sales incentives drive performance."
+    },
+    {
+      "word": "commission",
+      "category": "Sales",
+      "meaning_ja": "歩合、手数料",
+      "difficulty": "intermediate",
+      "example": "He earns a commission on every sale."
+    },
+    {
+      "word": "allowance",
+      "category": "HR",
+      "meaning_ja": "手当",
+      "difficulty": "intermediate",
+      "example": "The company provides a housing allowance."
+    },
+    {
+      "word": "contract",
+      "category": "Legal",
+      "meaning_ja": "契約",
+      "difficulty": "basic",
+      "example": "Read the contract carefully."
+    },
+    {
+      "word": "term",
+      "category": "Legal",
+      "meaning_ja": "期間、条件",
+      "difficulty": "basic",
+      "example": "The term of the contract is one year."
+    },
+    {
+      "word": "condition",
+      "category": "Legal",
+      "meaning_ja": "条件",
+      "difficulty": "basic",
+      "example": "Terms and conditions apply."
+    },
+    {
+      "word": "clause",
+      "category": "Legal",
+      "meaning_ja": "条項",
+      "difficulty": "advanced",
+      "example": "There is a confidentiality clause."
+    },
+    {
+      "word": "provision",
+      "category": "Legal",
+      "meaning_ja": "規定",
+      "difficulty": "advanced",
+      "example": "The contract includes a provision for early termination."
+    },
+    {
+      "word": "stipulation",
+      "category": "Legal",
+      "meaning_ja": "規定、条項",
+      "difficulty": "advanced",
+      "example": "One stipulation was that the project ends by May."
+    },
+    {
+      "word": "breach",
+      "category": "Legal",
+      "meaning_ja": "違反",
+      "difficulty": "advanced",
+      "example": "This is a breach of contract."
+    },
+    {
+      "word": "terminate",
+      "category": "Legal",
+      "meaning_ja": "終了させる",
+      "difficulty": "intermediate",
+      "example": "Either party may terminate the agreement."
+    },
+    {
+      "word": "renew",
+      "category": "Legal",
+      "meaning_ja": "更新する",
+      "difficulty": "basic",
+      "example": "I want to renew my subscription."
+    },
+    {
+      "word": "valid",
+      "category": "Legal",
+      "meaning_ja": "有効な",
+      "difficulty": "basic",
+      "example": "Is this coupon still valid?"
+    },
+    {
+      "word": "void",
+      "category": "Legal",
+      "meaning_ja": "無効な",
+      "difficulty": "intermediate",
+      "example": "The contract is null and void."
+    },
+    {
+      "word": "binding",
+      "category": "Legal",
+      "meaning_ja": "拘束力のある",
+      "difficulty": "intermediate",
+      "example": "This agreement is legally binding."
+    },
+    {
+      "word": "liable",
+      "category": "Legal",
+      "meaning_ja": "法的責任がある",
+      "difficulty": "advanced",
+      "example": "The company is liable for the damages."
+    },
+    {
+      "word": "asset",
+      "category": "Finance",
+      "meaning_ja": "資産",
+      "difficulty": "intermediate",
+      "example": "Employees are our greatest asset."
+    },
+    {
+      "word": "liability",
+      "category": "Finance",
+      "meaning_ja": "負債",
+      "difficulty": "intermediate",
+      "example": "We need to reduce our liabilities."
+    },
+    {
+      "word": "equity",
+      "category": "Finance",
+      "meaning_ja": "資本、公平",
+      "difficulty": "intermediate",
+      "example": "They have significant equity in the firm."
+    },
+    {
+      "word": "capital",
+      "category": "Finance",
+      "meaning_ja": "資本金",
+      "difficulty": "basic",
+      "example": "We need to raise capital for expansion."
+    },
+    {
+      "word": "investment",
+      "category": "Finance",
+      "meaning_ja": "投資",
+      "difficulty": "basic",
+      "example": "This is a risky investment."
+    },
+    {
+      "word": "shareholder",
+      "category": "Finance",
+      "meaning_ja": "株主",
+      "difficulty": "intermediate",
+      "example": "Shareholders voted on the proposal."
+    },
+    {
+      "word": "stakeholder",
+      "category": "Finance",
+      "meaning_ja": "利害関係者",
+      "difficulty": "intermediate",
+      "example": "We must consider all stakeholders."
+    },
+    {
+      "word": "dividend",
+      "category": "Finance",
+      "meaning_ja": "配当",
+      "difficulty": "intermediate",
+      "example": "The company pays a quarterly dividend."
+    },
+    {
+      "word": "yield",
+      "category": "Finance",
+      "meaning_ja": "利回り、産出する",
+      "difficulty": "advanced",
+      "example": "The bond yield is rising."
+    },
+    {
+      "word": "return",
+      "category": "Finance",
+      "meaning_ja": "利益、返品",
+      "difficulty": "basic",
+      "example": "The return on investment was high."
+    },
+    {
+      "word": "ROI",
+      "category": "Finance",
+      "meaning_ja": "投資対効果",
+      "difficulty": "intermediate",
+      "example": "We expect a quick ROI."
+    },
+    {
+      "word": "profit",
+      "category": "Finance",
+      "meaning_ja": "利益",
+      "difficulty": "basic",
+      "example": "The company made a huge profit."
+    },
+    {
+      "word": "loss",
+      "category": "Finance",
+      "meaning_ja": "損失",
+      "difficulty": "basic",
+      "example": "We operated at a loss last year."
+    },
+    {
+      "word": "revenue",
+      "category": "Finance",
+      "meaning_ja": "収益",
+      "difficulty": "intermediate",
+      "example": "Revenue increased by 10%."
+    },
+    {
+      "word": "turnover",
+      "category": "Finance",
+      "meaning_ja": "売上高、離職率",
+      "difficulty": "intermediate",
+      "example": "Annual turnover exceeded 1 million."
+    },
+    {
+      "word": "expense",
+      "category": "Finance",
+      "meaning_ja": "費用",
+      "difficulty": "basic",
+      "example": "Travel expenses are reimbursed."
+    },
+    {
+      "word": "cost",
+      "category": "Finance",
+      "meaning_ja": "コスト",
+      "difficulty": "basic",
+      "example": "We need to cut costs."
+    },
+    {
+      "word": "budget",
+      "category": "Finance",
+      "meaning_ja": "予算",
+      "difficulty": "basic",
+      "example": "The project is over budget."
+    },
+    {
+      "word": "forecast",
+      "category": "Finance",
+      "meaning_ja": "予測",
+      "difficulty": "intermediate",
+      "example": "The sales forecast looks promising."
+    },
+    {
+      "word": "audit",
+      "category": "Finance",
+      "meaning_ja": "監査",
+      "difficulty": "intermediate",
+      "example": "The accounts are subject to an annual audit."
+    },
+    {
+      "word": "marketing",
+      "category": "Marketing",
+      "meaning_ja": "マーケティング",
+      "difficulty": "basic",
+      "example": "Digital marketing is essential today."
+    },
+    {
+      "word": "segment",
+      "category": "Marketing",
+      "meaning_ja": "区分、セグメント",
+      "difficulty": "intermediate",
+      "example": "We target a specific market segment."
+    },
+    {
+      "word": "niche",
+      "category": "Marketing",
+      "meaning_ja": "隙間市場",
+      "difficulty": "intermediate",
+      "example": "They found a niche in the organic food market."
+    },
+    {
+      "word": "campaign",
+      "category": "Marketing",
+      "meaning_ja": "キャンペーン",
+      "difficulty": "basic",
+      "example": "The ad campaign was very successful."
+    },
+    {
+      "word": "brand",
+      "category": "Marketing",
+      "meaning_ja": "ブランド",
+      "difficulty": "basic",
+      "example": "Building a strong brand takes time."
+    },
+    {
+      "word": "slogan",
+      "category": "Marketing",
+      "meaning_ja": "スローガン",
+      "difficulty": "basic",
+      "example": "Their slogan is catchy."
+    },
+    {
+      "word": "trademark",
+      "category": "Legal",
+      "meaning_ja": "商標",
+      "difficulty": "intermediate",
+      "example": "They registered the trademark globally."
+    },
+    {
+      "word": "launch",
+      "category": "Marketing",
+      "meaning_ja": "発売する、開始する",
+      "difficulty": "basic",
+      "example": "We plan to launch the product in June."
+    },
+    {
+      "word": "competitor",
+      "category": "Marketing",
+      "meaning_ja": "競合他社",
+      "difficulty": "basic",
+      "example": "We analyze our competitors regularly."
+    },
+    {
+      "word": "viral",
+      "category": "Marketing",
+      "meaning_ja": "ウイルス性の、拡散する",
+      "difficulty": "intermediate",
+      "example": "The video went viral overnight."
+    },
+    {
+      "word": "influencer",
+      "category": "Marketing",
+      "meaning_ja": "インフルエンサー",
+      "difficulty": "basic",
+      "example": "They hired an influencer to promote the app."
+    },
+    {
+      "word": "SEO",
+      "category": "Marketing",
+      "meaning_ja": "検索エンジン最適化",
+      "difficulty": "intermediate",
+      "example": "Good SEO improves website traffic."
+    },
+    {
+      "word": "conversion",
+      "category": "Marketing",
+      "meaning_ja": "転換、コンバージョン",
+      "difficulty": "advanced",
+      "example": "The conversion rate increased by 2%."
+    },
+    {
+      "word": "lead",
+      "category": "Sales",
+      "meaning_ja": "見込み客",
+      "difficulty": "intermediate",
+      "example": "We need to generate more leads."
+    },
+    {
+      "word": "pipeline",
+      "category": "Sales",
+      "meaning_ja": "パイプライン",
+      "difficulty": "intermediate",
+      "example": "There are several deals in the pipeline."
+    },
+    {
+      "word": "prospect",
+      "category": "Sales",
+      "meaning_ja": "見込み客",
+      "difficulty": "intermediate",
+      "example": "He is a promising prospect."
+    },
+    {
+      "word": "loyalty",
+      "category": "Marketing",
+      "meaning_ja": "忠誠心",
+      "difficulty": "intermediate",
+      "example": "Customer loyalty is crucial."
+    },
+    {
+      "word": "retention",
+      "category": "Marketing",
+      "meaning_ja": "保持、維持",
+      "difficulty": "intermediate",
+      "example": "Customer retention is cheaper than acquisition."
+    },
+    {
+      "word": "churn",
+      "category": "Marketing",
+      "meaning_ja": "解約",
+      "difficulty": "advanced",
+      "example": "We must reduce the churn rate."
+    },
+    {
+      "word": "satisfaction",
+      "category": "Service",
+      "meaning_ja": "満足",
+      "difficulty": "basic",
+      "example": "Customer satisfaction is our priority."
+    },
+    {
+      "word": "refund",
+      "category": "Service",
+      "meaning_ja": "返金",
+      "difficulty": "basic",
+      "example": "Can I get a refund?"
+    },
+    {
+      "word": "warranty",
+      "category": "Service",
+      "meaning_ja": "保証",
+      "difficulty": "basic",
+      "example": "The product comes with a two-year warranty."
+    },
+    {
+      "word": "invoice",
+      "category": "Finance",
+      "meaning_ja": "請求書",
+      "difficulty": "basic",
+      "example": "Please send the invoice by email."
+    },
+    {
+      "word": "quote",
+      "category": "Sales",
+      "meaning_ja": "見積もり",
+      "difficulty": "basic",
+      "example": "Can you give me a quote for the job?"
+    },
+    {
+      "word": "estimate",
+      "category": "General",
+      "meaning_ja": "見積もる",
+      "difficulty": "basic",
+      "example": "Estimate the cost."
+    },
+    {
+      "word": "bid",
+      "category": "Sales",
+      "meaning_ja": "入札",
+      "difficulty": "intermediate",
+      "example": "They placed a bid on the contract."
+    },
+    {
+      "word": "tender",
+      "category": "Sales",
+      "meaning_ja": "入札",
+      "difficulty": "advanced",
+      "example": "The government announced a tender for the bridge."
+    },
+    {
+      "word": "wholesale",
+      "category": "Sales",
+      "meaning_ja": "卸売り",
+      "difficulty": "intermediate",
+      "example": "We buy at wholesale prices."
+    },
+    {
+      "word": "retail",
+      "category": "Sales",
+      "meaning_ja": "小売り",
+      "difficulty": "basic",
+      "example": "The retail price is $50."
+    },
+    {
+      "word": "logistics",
+      "category": "Operations",
+      "meaning_ja": "物流",
+      "difficulty": "intermediate",
+      "example": "Logistics management is complex."
+    },
+    {
+      "word": "inventory",
+      "category": "Operations",
+      "meaning_ja": "在庫",
+      "difficulty": "intermediate",
+      "example": "We need to check the inventory."
+    },
+    {
+      "word": "freight",
+      "category": "Operations",
+      "meaning_ja": "貨物",
+      "difficulty": "intermediate",
+      "example": "The freight charges are high."
+    },
+    {
+      "word": "shipment",
+      "category": "Operations",
+      "meaning_ja": "出荷、積荷",
+      "difficulty": "basic",
+      "example": "The shipment arrives tomorrow."
+    },
+    {
+      "word": "tariff",
+      "category": "Economy",
+      "meaning_ja": "関税",
+      "difficulty": "advanced",
+      "example": "New tariffs were imposed on steel."
+    },
+    {
+      "word": "customs",
+      "category": "Economy",
+      "meaning_ja": "税関",
+      "difficulty": "basic",
+      "example": "It took hours to clear customs."
+    },
+    {
+      "word": "merger",
+      "category": "Business",
+      "meaning_ja": "合併",
+      "difficulty": "intermediate",
+      "example": "The merger created the world's largest bank."
+    },
+    {
+      "word": "acquisition",
+      "category": "Business",
+      "meaning_ja": "買収",
+      "difficulty": "intermediate",
+      "example": "The acquisition was finalized yesterday."
+    },
+    {
+      "word": "subsidiary",
+      "category": "Business",
+      "meaning_ja": "子会社",
+      "difficulty": "advanced",
+      "example": "This company is a subsidiary of a larger group."
+    },
+    {
+      "word": "franchise",
+      "category": "Business",
+      "meaning_ja": "フランチャイズ",
+      "difficulty": "intermediate",
+      "example": "They opened a new franchise in Tokyo."
+    },
+    {
+      "word": "collaborate",
+      "category": "General",
+      "meaning_ja": "協力する",
+      "difficulty": "basic",
+      "example": "We collaborate with international partners."
+    },
+    {
+      "word": "coordinate",
+      "category": "General",
+      "meaning_ja": "調整する",
+      "difficulty": "intermediate",
+      "example": "She coordinates the project activities."
+    },
+    {
+      "word": "facilitate",
+      "category": "General",
+      "meaning_ja": "促進する",
+      "difficulty": "advanced",
+      "example": "Facilitate communication."
+    },
+    {
+      "word": "supervise",
+      "category": "Management",
+      "meaning_ja": "監督する",
+      "difficulty": "intermediate",
+      "example": "He supervises a team of five."
+    },
+    {
+      "word": "oversee",
+      "category": "Management",
+      "meaning_ja": "監督する",
+      "difficulty": "intermediate",
+      "example": "She oversees the entire operation."
+    },
+    {
+      "word": "monopoly",
+      "category": "Economy",
+      "meaning_ja": "独占",
+      "difficulty": "advanced",
+      "example": "The company has a monopoly in the region."
+    },
+    {
+      "word": "currency",
+      "category": "Economy",
+      "meaning_ja": "通貨",
+      "difficulty": "basic",
+      "example": "The local currency is weak."
+    },
+    {
+      "word": "exchange rate",
+      "category": "Economy",
+      "meaning_ja": "為替レート",
+      "difficulty": "intermediate",
+      "example": "The exchange rate fluctuates daily."
+    },
+    {
+      "word": "inflation",
+      "category": "Economy",
+      "meaning_ja": "インフレ",
+      "difficulty": "intermediate",
+      "example": "Inflation affects purchasing power."
+    },
+    {
+      "word": "recession",
+      "category": "Economy",
+      "meaning_ja": "不況",
+      "difficulty": "intermediate",
+      "example": "The economy is entering a recession."
+    },
+    {
+      "word": "depression",
+      "category": "Economy",
+      "meaning_ja": "恐慌、不況",
+      "difficulty": "advanced",
+      "example": "The Great Depression was severe."
+    },
+    {
+      "word": "bankruptcy",
+      "category": "Legal",
+      "meaning_ja": "倒産",
+      "difficulty": "intermediate",
+      "example": "They filed for bankruptcy."
+    },
+    {
+      "word": "debt",
+      "category": "Finance",
+      "meaning_ja": "借金",
+      "difficulty": "basic",
+      "example": "The company is in debt."
+    },
+    {
+      "word": "loan",
+      "category": "Finance",
+      "meaning_ja": "ローン、貸付",
+      "difficulty": "basic",
+      "example": "We applied for a bank loan."
+    },
+    {
+      "word": "mortgage",
+      "category": "Finance",
+      "meaning_ja": "住宅ローン",
+      "difficulty": "intermediate",
+      "example": "Paying off the mortgage takes years."
+    },
+    {
+      "word": "interest",
+      "category": "Finance",
+      "meaning_ja": "利子",
+      "difficulty": "basic",
+      "example": "The interest rate is 5%."
+    },
+    {
+      "word": "principal",
+      "category": "Finance",
+      "meaning_ja": "元金",
+      "difficulty": "advanced",
+      "example": "You need to pay back the principal."
+    },
+    {
+      "word": "arrears",
+      "category": "Finance",
+      "meaning_ja": "滞納金",
+      "difficulty": "advanced",
+      "example": "His rent is in arrears."
+    },
+    {
+      "word": "installment",
+      "category": "Finance",
+      "meaning_ja": "分割払い",
+      "difficulty": "intermediate",
+      "example": "You can pay in monthly installments."
+    },
+    {
+      "word": "deposit",
+      "category": "Finance",
+      "meaning_ja": "預金する",
+      "difficulty": "basic",
+      "example": "Deposit the check."
+    },
+    {
+      "word": "withdraw",
+      "category": "Finance",
+      "meaning_ja": "引き出す",
+      "difficulty": "basic",
+      "example": "I need to withdraw some cash."
+    },
+    {
+      "word": "transaction",
+      "category": "Finance",
+      "meaning_ja": "取引",
+      "difficulty": "intermediate",
+      "example": "The transaction was successful."
+    },
+    {
+      "word": "balance",
+      "category": "Finance",
+      "meaning_ja": "残高",
+      "difficulty": "basic",
+      "example": "Check your account balance."
+    },
+    {
+      "word": "statement",
+      "category": "Finance",
+      "meaning_ja": "明細書",
+      "difficulty": "intermediate",
+      "example": "I received my bank statement."
+    },
+    {
+      "word": "credential",
+      "category": "HR",
+      "meaning_ja": "資格、信用証明",
+      "difficulty": "advanced",
+      "example": "He has excellent credentials."
+    },
+    {
+      "word": "applicant",
+      "category": "HR",
+      "meaning_ja": "応募者",
+      "difficulty": "basic",
+      "example": "There were 50 applicants for the job."
+    },
+    {
+      "word": "candidate",
+      "category": "HR",
+      "meaning_ja": "候補者",
+      "difficulty": "basic",
+      "example": "She is the strongest candidate."
+    },
+    {
+      "word": "resume",
+      "category": "HR",
+      "meaning_ja": "履歴書",
+      "difficulty": "basic",
+      "example": "Please send your resume."
+    },
+    {
+      "word": "CV",
+      "category": "HR",
+      "meaning_ja": "履歴書",
+      "difficulty": "basic",
+      "example": "Attach your CV to the email."
+    },
+    {
+      "word": "reference",
+      "category": "HR",
+      "meaning_ja": "照会先、推薦人",
+      "difficulty": "intermediate",
+      "example": "Can you provide a reference?"
+    },
+    {
+      "word": "shortlist",
+      "category": "HR",
+      "meaning_ja": "最終候補リスト",
+      "difficulty": "intermediate",
+      "example": "She is on the shortlist."
+    },
+    {
+      "word": "probation",
+      "category": "HR",
+      "meaning_ja": "試用期間",
+      "difficulty": "advanced",
+      "example": "There is a three-month probation period."
+    },
+    {
+      "word": "tenure",
+      "category": "HR",
+      "meaning_ja": "在職期間",
+      "difficulty": "advanced",
+      "example": "He has a long tenure at the company."
+    },
+    {
+      "word": "morale",
+      "category": "HR",
+      "meaning_ja": "士気",
+      "difficulty": "intermediate",
+      "example": "Team morale is low."
+    },
+    {
+      "word": "ethics",
+      "category": "General",
+      "meaning_ja": "倫理",
+      "difficulty": "intermediate",
+      "example": "Business ethics are important."
+    },
+    {
+      "word": "integrity",
+      "category": "General",
+      "meaning_ja": "誠実さ",
+      "difficulty": "intermediate",
+      "example": "She is known for her integrity."
+    },
+    {
+      "word": "transparency",
+      "category": "General",
+      "meaning_ja": "透明性",
+      "difficulty": "intermediate",
+      "example": "We value transparency in reporting."
+    },
+    {
+      "word": "accountability",
+      "category": "General",
+      "meaning_ja": "説明責任",
+      "difficulty": "advanced",
+      "example": "There must be accountability for decisions."
+    },
+    {
+      "word": "sustainability",
+      "category": "General",
+      "meaning_ja": "持続可能性",
+      "difficulty": "intermediate",
+      "example": "Sustainability is a core goal."
+    },
+    {
+      "word": "CSR",
+      "category": "General",
+      "meaning_ja": "企業の社会的責任",
+      "difficulty": "intermediate",
+      "example": "Our CSR program supports local schools."
+    },
+    {
+      "word": "patent",
+      "category": "Legal",
+      "meaning_ja": "特許",
+      "difficulty": "intermediate",
+      "example": "They filed a patent for the new technology."
+    },
+    {
+      "word": "litigation",
+      "category": "Legal",
+      "meaning_ja": "訴訟",
+      "difficulty": "advanced",
+      "example": "The company is facing litigation."
+    },
+    {
+      "word": "algorithm",
+      "category": "IT",
+      "meaning_ja": "アルゴリズム",
+      "difficulty": "intermediate",
+      "example": "The search algorithm was updated."
+    },
+    {
+      "word": "database",
+      "category": "IT",
+      "meaning_ja": "データベース",
+      "difficulty": "basic",
+      "example": "We store customer data in the database."
+    },
+    {
+      "word": "cloud",
+      "category": "IT",
+      "meaning_ja": "クラウド",
+      "difficulty": "basic",
+      "example": "Data is backed up to the cloud."
+    },
+    {
+      "word": "server",
+      "category": "IT",
+      "meaning_ja": "サーバー",
+      "difficulty": "basic",
+      "example": "The server is down for maintenance."
+    },
+    {
+      "word": "network",
+      "category": "IT",
+      "meaning_ja": "ネットワーク",
+      "difficulty": "basic",
+      "example": "The network connection is slow."
+    },
+    {
+      "word": "interface",
+      "category": "IT",
+      "meaning_ja": "インターフェース",
+      "difficulty": "intermediate",
+      "example": "The user interface is intuitive."
+    },
+    {
+      "word": "platform",
+      "category": "IT",
+      "meaning_ja": "プラットフォーム",
+      "difficulty": "intermediate",
+      "example": "This platform supports millions of users."
+    },
+    {
+      "word": "infrastructure",
+      "category": "IT",
+      "meaning_ja": "インフラ",
+      "difficulty": "advanced",
+      "example": "IT infrastructure needs upgrading."
+    },
+    {
+      "word": "encryption",
+      "category": "IT",
+      "meaning_ja": "暗号化",
+      "difficulty": "advanced",
+      "example": "Encryption protects sensitive data."
+    },
+    {
+      "word": "authentication",
+      "category": "IT",
+      "meaning_ja": "認証",
+      "difficulty": "advanced",
+      "example": "Two-factor authentication is safer."
+    },
+    {
+      "word": "permission",
+      "category": "IT",
+      "meaning_ja": "許可、権限",
+      "difficulty": "intermediate",
+      "example": "You don't have permission to access this file."
+    },
+    {
+      "word": "configuration",
+      "category": "IT",
+      "meaning_ja": "構成、設定",
+      "difficulty": "intermediate",
+      "example": "Check the system configuration."
+    },
+    {
+      "word": "deployment",
+      "category": "IT",
+      "meaning_ja": "配備、展開",
+      "difficulty": "advanced",
+      "example": "The software deployment went smoothly."
+    },
+    {
+      "word": "integration",
+      "category": "IT",
+      "meaning_ja": "統合",
+      "difficulty": "intermediate",
+      "example": "API integration allows seamless data transfer."
+    },
+    {
+      "word": "framework",
+      "category": "IT",
+      "meaning_ja": "枠組み、フレームワーク",
+      "difficulty": "intermediate",
+      "example": "We use a popular web framework."
+    },
+    {
+      "word": "repository",
+      "category": "IT",
+      "meaning_ja": "貯蔵場所、リポジトリ",
+      "difficulty": "advanced",
+      "example": "The code is stored in the repository."
+    },
+    {
+      "word": "agile",
+      "category": "IT",
+      "meaning_ja": "アジャイル",
+      "difficulty": "intermediate",
+      "example": "We follow agile development methodology."
+    },
+    {
+      "word": "scrum",
+      "category": "IT",
+      "meaning_ja": "スクラム",
+      "difficulty": "intermediate",
+      "example": "Daily scrum meetings keep us aligned."
+    },
+    {
+      "word": "backlog",
+      "category": "IT",
+      "meaning_ja": "未処理分、バックログ",
+      "difficulty": "advanced",
+      "example": "The product backlog is growing."
+    },
+    {
+      "word": "prototype",
+      "category": "IT",
+      "meaning_ja": "試作品",
+      "difficulty": "intermediate",
+      "example": "We built a prototype to test the concept."
+    },
+    {
+      "word": "bug",
+      "category": "IT",
+      "meaning_ja": "バグ、不具合",
+      "difficulty": "basic",
+      "example": "I found a bug in the code."
+    },
+    {
+      "word": "glitch",
+      "category": "IT",
+      "meaning_ja": "一時的な故障",
+      "difficulty": "intermediate",
+      "example": "There was a technical glitch."
+    },
+    {
+      "word": "troubleshoot",
+      "category": "IT",
+      "meaning_ja": "トラブル解決をする",
+      "difficulty": "intermediate",
+      "example": "I need to troubleshoot the connection issue."
+    },
+    {
+      "word": "maintenance",
+      "category": "IT",
+      "meaning_ja": "保守",
+      "difficulty": "basic",
+      "example": "Scheduled maintenance is tonight."
+    },
+    {
+      "word": "compatibility",
+      "category": "IT",
+      "meaning_ja": "互換性",
+      "difficulty": "intermediate",
+      "example": "Check for software compatibility."
+    },
+    {
+      "word": "upgrade",
+      "category": "IT",
+      "meaning_ja": "アップグレードする",
+      "difficulty": "basic",
+      "example": "You should upgrade your OS."
+    },
+    {
+      "word": "outsource",
+      "category": "Business",
+      "meaning_ja": "外部委託する",
+      "difficulty": "intermediate",
+      "example": "They outsource customer support."
+    },
+    {
+      "word": "offshore",
+      "category": "Business",
+      "meaning_ja": "海外の",
+      "difficulty": "intermediate",
+      "example": "We have an offshore development team."
+    },
+    {
+      "word": "freelance",
+      "category": "Business",
+      "meaning_ja": "フリーランスの",
+      "difficulty": "basic",
+      "example": "He works as a freelance designer."
+    },
+    {
+      "word": "entrepreneur",
+      "category": "Business",
+      "meaning_ja": "起業家",
+      "difficulty": "advanced",
+      "example": "She is a successful entrepreneur."
+    },
+    {
+      "word": "startup",
+      "category": "Business",
+      "meaning_ja": "新興企業",
+      "difficulty": "basic",
+      "example": "Working at a startup is exciting."
+    },
+    {
+      "word": "venture capital",
+      "category": "Finance",
+      "meaning_ja": "ベンチャーキャピタル",
+      "difficulty": "advanced",
+      "example": "They raised money from venture capital."
+    },
+    {
+      "word": "pitch",
+      "category": "Business",
+      "meaning_ja": "売り込み",
+      "difficulty": "intermediate",
+      "example": "He made a sales pitch to the investors."
+    },
+    {
+      "word": "networking",
+      "category": "Business",
+      "meaning_ja": "人脈作り",
+      "difficulty": "basic",
+      "example": "Networking is key to career growth."
+    },
+    {
+      "word": "workshop",
+      "category": "Business",
+      "meaning_ja": "研修会",
+      "difficulty": "basic",
+      "example": "We attended a leadership workshop."
+    },
+    {
+      "word": "seminar",
+      "category": "Business",
+      "meaning_ja": "セミナー",
+      "difficulty": "basic",
+      "example": "The seminar was very informative."
+    },
+    {
+      "word": "conference",
+      "category": "Business",
+      "meaning_ja": "会議、大会",
+      "difficulty": "basic",
+      "example": "I am speaking at a conference next week."
+    },
+    {
+      "word": "webinar",
+      "category": "Business",
+      "meaning_ja": "ウェブセミナー",
+      "difficulty": "basic",
+      "example": "Sign up for our free webinar."
+    },
+    {
+      "word": "keynote",
+      "category": "Business",
+      "meaning_ja": "基調講演",
+      "difficulty": "intermediate",
+      "example": "The keynote speaker was inspiring."
+    },
+    {
+      "word": "panel",
+      "category": "Business",
+      "meaning_ja": "パネル、討論団",
+      "difficulty": "intermediate",
+      "example": "She participated in a panel discussion."
+    },
+    {
+      "word": "moderator",
+      "category": "Business",
+      "meaning_ja": "司会者",
+      "difficulty": "intermediate",
+      "example": "The moderator managed the Q&A session."
+    },
+    {
+      "word": "attendee",
+      "category": "Business",
+      "meaning_ja": "出席者",
+      "difficulty": "basic",
+      "example": "There were over 500 attendees."
+    },
+    {
+      "word": "venue",
+      "category": "Business",
+      "meaning_ja": "開催地",
+      "difficulty": "basic",
+      "example": "The venue for the event is the hotel."
+    },
+    {
+      "word": "itinerary",
+      "category": "Travel",
+      "meaning_ja": "旅程表",
+      "difficulty": "advanced",
+      "example": "Check your travel itinerary."
+    },
+    {
+      "word": "accommodation",
+      "category": "Travel",
+      "meaning_ja": "宿泊施設",
+      "difficulty": "intermediate",
+      "example": "Accommodation is included in the package."
+    },
+    {
+      "word": "reimburse",
+      "category": "Finance",
+      "meaning_ja": "払い戻す",
+      "difficulty": "intermediate",
+      "example": "The company will reimburse your travel costs."
+    },
+    {
+      "word": "per diem",
+      "category": "Finance",
+      "meaning_ja": "日当",
+      "difficulty": "advanced",
+      "example": "We receive a per diem for meals."
+    },
+    {
+      "word": "expedite",
+      "category": "General",
+      "meaning_ja": "早める、促進する",
+      "difficulty": "advanced",
+      "example": "Please expedite the shipping."
+    },
+    {
+      "word": "postpone",
+      "category": "General",
+      "meaning_ja": "延期する",
+      "difficulty": "intermediate",
+      "example": "The meeting was postponed."
+    },
+    {
+      "word": "cancel",
+      "category": "General",
+      "meaning_ja": "中止する",
+      "difficulty": "basic",
+      "example": "We had to cancel the event."
+    },
+    {
+      "word": "confirm",
+      "category": "General",
+      "meaning_ja": "確認する",
+      "difficulty": "basic",
+      "example": "Please confirm your attendance."
+    },
+    {
+      "word": "remind",
+      "category": "General",
+      "meaning_ja": "思い出させる",
+      "difficulty": "basic",
+      "example": "Remind me to call him later."
+    },
+    {
+      "word": "notify",
+      "category": "General",
+      "meaning_ja": "通知する",
+      "difficulty": "basic",
+      "example": "We will notify you by email."
+    },
+    {
+      "word": "inform",
+      "category": "General",
+      "meaning_ja": "知らせる",
+      "difficulty": "basic",
+      "example": "Please inform us of any changes."
+    },
+    {
+      "word": "announce",
+      "category": "General",
+      "meaning_ja": "発表する",
+      "difficulty": "basic",
+      "example": "They announced a new policy."
+    },
+    {
+      "word": "declare",
+      "category": "General",
+      "meaning_ja": "宣言する",
+      "difficulty": "intermediate",
+      "example": "They declared bankruptcy."
+    },
+    {
+      "word": "state",
+      "category": "General",
+      "meaning_ja": "述べる",
+      "difficulty": "basic",
+      "example": "Please state your name."
+    },
+    {
+      "word": "mention",
+      "category": "General",
+      "meaning_ja": "言及する",
+      "difficulty": "basic",
+      "example": "Did he mention the deadline?"
+    },
+    {
+      "word": "discuss",
+      "category": "General",
+      "meaning_ja": "議論する",
+      "difficulty": "basic",
+      "example": "Let's discuss the contract."
+    },
+    {
+      "word": "argue",
+      "category": "General",
+      "meaning_ja": "主張する、議論する",
+      "difficulty": "basic",
+      "example": "He argued for a different approach."
+    },
+    {
+      "word": "debate",
+      "category": "General",
+      "meaning_ja": "討論する",
+      "difficulty": "intermediate",
+      "example": "They debated the pros and cons."
+    },
+    {
+      "word": "persuade",
+      "category": "General",
+      "meaning_ja": "説得する",
+      "difficulty": "intermediate",
+      "example": "I tried to persuade him to stay."
+    },
+    {
+      "word": "convince",
+      "category": "General",
+      "meaning_ja": "納得させる",
+      "difficulty": "intermediate",
+      "example": "He convinced me to buy it."
+    },
+    {
+      "word": "emphasize",
+      "category": "General",
+      "meaning_ja": "強調する",
+      "difficulty": "intermediate",
+      "example": "He emphasized the importance of quality."
+    },
+    {
+      "word": "highlight",
+      "category": "General",
+      "meaning_ja": "強調する、目立たせる",
+      "difficulty": "basic",
+      "example": "The report highlights key achievements."
+    },
+    {
+      "word": "outline",
+      "category": "General",
+      "meaning_ja": "概略を述べる",
+      "difficulty": "intermediate",
+      "example": "She outlined the plan."
+    },
+    {
+      "word": "detail",
+      "category": "General",
+      "meaning_ja": "詳述する",
+      "difficulty": "basic",
+      "example": "The report details the findings."
+    },
+    {
+      "word": "elaborate",
+      "category": "General",
+      "meaning_ja": "詳しく述べる",
+      "difficulty": "advanced",
+      "example": "Can you elaborate on that point?"
+    },
+    {
+      "word": "clarify",
+      "category": "General",
+      "meaning_ja": "明確にする",
+      "difficulty": "intermediate",
+      "example": "I need to clarify the instructions."
+    },
+    {
+      "word": "justify",
+      "category": "General",
+      "meaning_ja": "正当化する",
+      "difficulty": "intermediate",
+      "example": "How do you justify the cost?"
+    },
+    {
+      "word": "authorize",
+      "category": "General",
+      "meaning_ja": "権限を与える、認可する",
+      "difficulty": "intermediate",
+      "example": "Who authorized this purchase?"
+    },
+    {
+      "word": "approve",
+      "category": "General",
+      "meaning_ja": "承認する",
+      "difficulty": "basic",
+      "example": "The manager approved the request."
+    },
+    {
+      "word": "reject",
+      "category": "General",
+      "meaning_ja": "拒絶する",
+      "difficulty": "basic",
+      "example": "The proposal was rejected."
+    },
+    {
+      "word": "accept",
+      "category": "General",
+      "meaning_ja": "受け入れる",
+      "difficulty": "basic",
+      "example": "We accepted the offer."
+    },
+    {
+      "word": "decline",
+      "category": "General",
+      "meaning_ja": "辞退する、低下する",
+      "difficulty": "intermediate",
+      "example": "He declined the invitation."
+    },
+    {
+      "word": "veto",
+      "category": "Political",
+      "meaning_ja": "拒否権を行使する",
+      "difficulty": "advanced",
+      "example": "The president vetoed the bill."
+    },
+    {
+      "word": "ban",
+      "category": "Legal",
+      "meaning_ja": "禁止する",
+      "difficulty": "basic",
+      "example": "Smoking is banned in the office."
+    },
+    {
+      "word": "prohibit",
+      "category": "Legal",
+      "meaning_ja": "禁止する",
+      "difficulty": "intermediate",
+      "example": "Parking is prohibited here."
+    },
+    {
+      "word": "forbid",
+      "category": "Legal",
+      "meaning_ja": "禁じる",
+      "difficulty": "intermediate",
+      "example": "I forbid you to go."
+    },
+    {
+      "word": "permit",
+      "category": "Legal",
+      "meaning_ja": "許可する",
+      "difficulty": "basic",
+      "example": "Photography is not permitted."
+    },
+    {
+      "word": "allow",
+      "category": "Legal",
+      "meaning_ja": "許す",
+      "difficulty": "basic",
+      "example": "Pets are not allowed."
+    },
+    {
+      "word": "grant",
+      "category": "Legal",
+      "meaning_ja": "与える、助成金",
+      "difficulty": "intermediate",
+      "example": "The request was granted."
+    },
+    {
+      "word": "touch base",
+      "category": "Idiom",
+      "meaning_ja": "連絡を取る",
+      "difficulty": "basic",
+      "example": "Let's touch base next week."
+    },
+    {
+      "word": "ball is in your court",
+      "category": "Idiom",
+      "meaning_ja": "次はあなたの番だ",
+      "difficulty": "intermediate",
+      "example": "I've made my offer; now the ball is in your court."
+    },
+    {
+      "word": "bite off more than one can chew",
+      "category": "Idiom",
+      "meaning_ja": "手に余ることをしようとする",
+      "difficulty": "advanced",
+      "example": "Don't bite off more than you can chew with this project."
+    },
+    {
+      "word": "burn the midnight oil",
+      "category": "Idiom",
+      "meaning_ja": "夜遅くまで働く",
+      "difficulty": "intermediate",
+      "example": "We had to burn the midnight oil to meet the deadline."
+    },
+    {
+      "word": "call it a day",
+      "category": "Idiom",
+      "meaning_ja": "その日の仕事を切り上げる",
+      "difficulty": "basic",
+      "example": "I'm tired; let's call it a day."
+    },
+    {
+      "word": "cut corners",
+      "category": "Idiom",
+      "meaning_ja": "手抜きをする、経費を節減する",
+      "difficulty": "intermediate",
+      "example": "Don't cut corners on safety."
+    },
+    {
+      "word": "get the ball rolling",
+      "category": "Idiom",
+      "meaning_ja": "軌道に乗せる、始める",
+      "difficulty": "intermediate",
+      "example": "Let's have a meeting to get the ball rolling."
+    },
+    {
+      "word": "in the loop",
+      "category": "Idiom",
+      "meaning_ja": "事情に通じて、蚊帳の中で",
+      "difficulty": "intermediate",
+      "example": "Keep me in the loop regarding the changes."
+    },
+    {
+      "word": "off the hook",
+      "category": "Idiom",
+      "meaning_ja": "責任を逃れて",
+      "difficulty": "advanced",
+      "example": "You're off the hook for this error."
+    },
+    {
+      "word": "on the same page",
+      "category": "Idiom",
+      "meaning_ja": "意見が一致して",
+      "difficulty": "basic",
+      "example": "We need to make sure we are on the same page."
+    },
+    {
+      "word": "think outside the box",
+      "category": "Idiom",
+      "meaning_ja": "既成概念にとらわれずに考える",
+      "difficulty": "basic",
+      "example": "To solve this, we must think outside the box."
+    },
+    {
+      "word": "up in the air",
+      "category": "Idiom",
+      "meaning_ja": "未決定で",
+      "difficulty": "intermediate",
+      "example": "The plans are still up in the air."
+    },
+    {
+      "word": "win-win",
+      "category": "Idiom",
+      "meaning_ja": "双方に利益のある",
+      "difficulty": "basic",
+      "example": "It's a win-win situation for both companies."
+    },
+    {
+      "word": "back to the drawing board",
+      "category": "Idiom",
+      "meaning_ja": "振り出しに戻る",
+      "difficulty": "intermediate",
+      "example": "The prototype failed, so it's back to the drawing board."
+    },
+    {
+      "word": "bottom line",
+      "category": "Idiom",
+      "meaning_ja": "最終損益、結論",
+      "difficulty": "basic",
+      "example": "The bottom line is that we need more sales."
+    },
+    {
+      "word": "by the book",
+      "category": "Idiom",
+      "meaning_ja": "規則通りに",
+      "difficulty": "intermediate",
+      "example": "Our auditor does everything by the book."
+    },
+    {
+      "word": "cold call",
+      "category": "Sales",
+      "meaning_ja": "勧誘電話",
+      "difficulty": "intermediate",
+      "example": "Salespeople hate making cold calls."
+    },
+    {
+      "word": "elevator pitch",
+      "category": "Business",
+      "meaning_ja": "簡潔な売り込み",
+      "difficulty": "intermediate",
+      "example": "Prepare a 30-second elevator pitch."
+    },
+    {
+      "word": "game plan",
+      "category": "Business",
+      "meaning_ja": "戦略、計画",
+      "difficulty": "basic",
+      "example": "What is our game plan for the launch?"
+    },
+    {
+      "word": "go the extra mile",
+      "category": "Idiom",
+      "meaning_ja": "一層の努力をする",
+      "difficulty": "basic",
+      "example": "She always goes the extra mile for customers."
+    },
+    {
+      "word": "hands tied",
+      "category": "Idiom",
+      "meaning_ja": "自由に行動できない",
+      "difficulty": "intermediate",
+      "example": "I'd love to help, but my hands are tied."
+    },
+    {
+      "word": "keep one's eye on the ball",
+      "category": "Idiom",
+      "meaning_ja": "注意を怠らない",
+      "difficulty": "intermediate",
+      "example": "We need to keep our eye on the ball."
+    },
+    {
+      "word": "learn the ropes",
+      "category": "Idiom",
+      "meaning_ja": "コツを覚える",
+      "difficulty": "intermediate",
+      "example": "It takes time to learn the ropes."
+    },
+    {
+      "word": "no-brainer",
+      "category": "Idiom",
+      "meaning_ja": "考えるまでもないこと",
+      "difficulty": "basic",
+      "example": "Accepting the offer was a no-brainer."
+    },
+    {
+      "word": "pink slip",
+      "category": "Idiom",
+      "meaning_ja": "解雇通知",
+      "difficulty": "advanced",
+      "example": "He received a pink slip yesterday."
+    },
+    {
+      "word": "play hardball",
+      "category": "Idiom",
+      "meaning_ja": "強硬な手段をとる",
+      "difficulty": "advanced",
+      "example": "The negotiators are playing hardball."
+    },
+    {
+      "word": "put out fires",
+      "category": "Idiom",
+      "meaning_ja": "緊急トラブルに対処する",
+      "difficulty": "intermediate",
+      "example": "I spent all day putting out fires."
+    },
+    {
+      "word": "raise the bar",
+      "category": "Idiom",
+      "meaning_ja": "水準を引き上げる",
+      "difficulty": "intermediate",
+      "example": "We need to raise the bar on quality."
+    },
+    {
+      "word": "rock the boat",
+      "category": "Idiom",
+      "meaning_ja": "波風を立てる",
+      "difficulty": "intermediate",
+      "example": "Don't rock the boat until the deal is signed."
+    },
+    {
+      "word": "safe bet",
+      "category": "Idiom",
+      "meaning_ja": "安全パイ、確実なこと",
+      "difficulty": "basic",
+      "example": "Investing in gold is usually a safe bet."
+    },
+    {
+      "word": "see eye to eye",
+      "category": "Idiom",
+      "meaning_ja": "意見が一致する",
+      "difficulty": "intermediate",
+      "example": "We don't see eye to eye on this issue."
+    },
+    {
+      "word": "state of the art",
+      "category": "Idiom",
+      "meaning_ja": "最先端の",
+      "difficulty": "intermediate",
+      "example": "This facility uses state-of-the-art technology."
+    },
+    {
+      "word": "take the bull by the horns",
+      "category": "Idiom",
+      "meaning_ja": "敢然と難局に立ち向かう",
+      "difficulty": "advanced",
+      "example": "You need to take the bull by the horns."
+    },
+    {
+      "word": "talk turkey",
+      "category": "Idiom",
+      "meaning_ja": "腹を割って話す",
+      "difficulty": "advanced",
+      "example": "Let's sit down and talk turkey."
+    },
+    {
+      "word": "the big picture",
+      "category": "Idiom",
+      "meaning_ja": "全体像",
+      "difficulty": "basic",
+      "example": "Don't get lost in details; look at the big picture."
+    },
+    {
+      "word": "throw in the towel",
+      "category": "Idiom",
+      "meaning_ja": "降参する",
+      "difficulty": "intermediate",
+      "example": "It's too early to throw in the towel."
+    },
+    {
+      "word": "twist someone's arm",
+      "category": "Idiom",
+      "meaning_ja": "無理強いする",
+      "difficulty": "intermediate",
+      "example": "I had to twist his arm to get him to agree."
+    },
+    {
+      "word": "up to speed",
+      "category": "Idiom",
+      "meaning_ja": "事情に通じて",
+      "difficulty": "intermediate",
+      "example": "Bring me up to speed on the project."
+    },
+    {
+      "word": "word of mouth",
+      "category": "Marketing",
+      "meaning_ja": "口コミ",
+      "difficulty": "basic",
+      "example": "We rely on word of mouth marketing."
+    },
+    {
+      "word": "ahead of the curve",
+      "category": "Idiom",
+      "meaning_ja": "時代を先取りして",
+      "difficulty": "advanced",
+      "example": "We want to stay ahead of the curve."
+    },
+    {
+      "word": "behind the scenes",
+      "category": "Idiom",
+      "meaning_ja": "舞台裏で",
+      "difficulty": "basic",
+      "example": "A lot of work happens behind the scenes."
+    },
+    {
+      "word": "best practice",
+      "category": "Business",
+      "meaning_ja": "最良の方法",
+      "difficulty": "intermediate",
+      "example": "Follow industry best practices."
+    },
+    {
+      "word": "brainstorm",
+      "category": "General",
+      "meaning_ja": "ブレインストーミングする",
+      "difficulty": "basic",
+      "example": "Let's brainstorm some ideas."
+    },
+    {
+      "word": "cash cow",
+      "category": "Business",
+      "meaning_ja": "稼ぎ頭",
+      "difficulty": "intermediate",
+      "example": "This product is our cash cow."
+    },
+    {
+      "word": "deep dive",
+      "category": "Business",
+      "meaning_ja": "徹底的な分析",
+      "difficulty": "intermediate",
+      "example": "Let's do a deep dive into the data."
+    },
+    {
+      "word": "drill down",
+      "category": "Business",
+      "meaning_ja": "深掘りする",
+      "difficulty": "intermediate",
+      "example": "We need to drill down into the details."
+    },
+    {
+      "word": "fast track",
+      "category": "Business",
+      "meaning_ja": "優先させる",
+      "difficulty": "intermediate",
+      "example": "The project was fast-tracked."
+    },
+    {
+      "word": "give the green light",
+      "category": "Idiom",
+      "meaning_ja": "許可を出す",
+      "difficulty": "basic",
+      "example": "Management gave the green light."
+    },
+    {
+      "word": "gray area",
+      "category": "Idiom",
+      "meaning_ja": "グレーゾーン",
+      "difficulty": "intermediate",
+      "example": "The regulation is a gray area."
+    },
+    {
+      "word": "hit the ground running",
+      "category": "Idiom",
+      "meaning_ja": "即戦力として働く",
+      "difficulty": "advanced",
+      "example": "We need someone who can hit the ground running."
+    },
+    {
+      "word": "in the red",
+      "category": "Idiom",
+      "meaning_ja": "赤字で",
+      "difficulty": "basic",
+      "example": "The company has been in the red for months."
+    },
+    {
+      "word": "in the black",
+      "category": "Idiom",
+      "meaning_ja": "黒字で",
+      "difficulty": "basic",
+      "example": "We are finally in the black."
+    },
+    {
+      "word": "keep posted",
+      "category": "Idiom",
+      "meaning_ja": "随時知らせる",
+      "difficulty": "basic",
+      "example": "Keep me posted on the progress."
+    },
+    {
+      "word": "low hanging fruit",
+      "category": "Idiom",
+      "meaning_ja": "容易に達成できる目標",
+      "difficulty": "intermediate",
+      "example": "Let's target the low hanging fruit first."
+    },
+    {
+      "word": "move the needle",
+      "category": "Idiom",
+      "meaning_ja": "状況を大きく変える",
+      "difficulty": "advanced",
+      "example": "This campaign didn't move the needle."
+    },
+    {
+      "word": "on track",
+      "category": "Idiom",
+      "meaning_ja": "順調で",
+      "difficulty": "basic",
+      "example": "The project is on track."
+    },
+    {
+      "word": "out of the loop",
+      "category": "Idiom",
+      "meaning_ja": "蚊帳の外で",
+      "difficulty": "intermediate",
+      "example": "I've been out of the loop for a week."
+    },
+    {
+      "word": "pain point",
+      "category": "Business",
+      "meaning_ja": "悩みの種",
+      "difficulty": "intermediate",
+      "example": "We address customer pain points."
+    },
+    {
+      "word": "ballpark figure",
+      "category": "Idiom",
+      "meaning_ja": "概算",
+      "difficulty": "intermediate",
+      "example": "Give me a ballpark figure."
+    },
+    {
+      "word": "bang for the buck",
+      "category": "Idiom",
+      "meaning_ja": "費用対効果",
+      "difficulty": "intermediate",
+      "example": "This tool offers great bang for the buck."
+    },
+    {
+      "word": "best of both worlds",
+      "category": "Idiom",
+      "meaning_ja": "良いとこ取り",
+      "difficulty": "basic",
+      "example": "It's the best of both worlds."
+    },
+    {
+      "word": "bring to the table",
+      "category": "Idiom",
+      "meaning_ja": "貢献する、提供する",
+      "difficulty": "intermediate",
+      "example": "What does he bring to the table?"
+    },
+    {
+      "word": "buy in",
+      "category": "Business",
+      "meaning_ja": "同意、支持",
+      "difficulty": "intermediate",
+      "example": "We need buy-in from the team."
+    },
+    {
+      "word": "change of pace",
+      "category": "Idiom",
+      "meaning_ja": "気分転換",
+      "difficulty": "basic",
+      "example": "It was a nice change of pace."
+    },
+    {
+      "word": "circle back",
+      "category": "Business",
+      "meaning_ja": "後でまた話す",
+      "difficulty": "intermediate",
+      "example": "Let's circle back to this later."
+    },
+    {
+      "word": "close the deal",
+      "category": "Sales",
+      "meaning_ja": "契約を結ぶ",
+      "difficulty": "basic",
+      "example": "He managed to close the deal."
+    },
+    {
+      "word": "come up with",
+      "category": "General",
+      "meaning_ja": "思いつく",
+      "difficulty": "basic",
+      "example": "She came up with a great idea."
+    },
+    {
+      "word": "crunch the numbers",
+      "category": "Idiom",
+      "meaning_ja": "計算する",
+      "difficulty": "intermediate",
+      "example": "I need to crunch the numbers."
+    },
+    {
+      "word": "cut to the chase",
+      "category": "Idiom",
+      "meaning_ja": "本題に入る",
+      "difficulty": "intermediate",
+      "example": "Let's cut to the chase."
+    },
+    {
+      "word": "deliver the goods",
+      "category": "Idiom",
+      "meaning_ja": "期待に応える",
+      "difficulty": "intermediate",
+      "example": "He always delivers the goods."
+    },
+    {
+      "word": "drive a hard bargain",
+      "category": "Idiom",
+      "meaning_ja": "強気な交渉をする",
+      "difficulty": "advanced",
+      "example": "He drives a hard bargain."
+    },
+    {
+      "word": "face value",
+      "category": "Idiom",
+      "meaning_ja": "額面通りに",
+      "difficulty": "intermediate",
+      "example": "Don't take it at face value."
+    },
+    {
+      "word": "figure out",
+      "category": "General",
+      "meaning_ja": "解決する、理解する",
+      "difficulty": "basic",
+      "example": "We need to figure out a solution."
+    },
+    {
+      "word": "fill in",
+      "category": "General",
+      "meaning_ja": "代理を務める、情報を教える",
+      "difficulty": "intermediate",
+      "example": "Can you fill me in on the meeting?"
+    },
+    {
+      "word": "follow up",
+      "category": "General",
+      "meaning_ja": "追跡調査する、後追いする",
+      "difficulty": "basic",
+      "example": "I will follow up with an email."
+    },
+    {
+      "word": "get down to business",
+      "category": "Idiom",
+      "meaning_ja": "本題に入る",
+      "difficulty": "basic",
+      "example": "Let's get down to business."
+    },
+    {
+      "word": "get rid of",
+      "category": "General",
+      "meaning_ja": "取り除く",
+      "difficulty": "basic",
+      "example": "We need to get rid of old stock."
+    },
+    {
+      "word": "go forward",
+      "category": "General",
+      "meaning_ja": "進める",
+      "difficulty": "basic",
+      "example": "We decided to go forward with the plan."
+    },
+    {
+      "word": "have a lot on one's plate",
+      "category": "Idiom",
+      "meaning_ja": "やるべきことが山積みだ",
+      "difficulty": "intermediate",
+      "example": "I have a lot on my plate right now."
+    },
+    {
+      "word": "keep under wraps",
+      "category": "Idiom",
+      "meaning_ja": "秘密にしておく",
+      "difficulty": "intermediate",
+      "example": "Keep this project under wraps."
+    },
+    {
+      "word": "kick off",
+      "category": "General",
+      "meaning_ja": "開始する",
+      "difficulty": "basic",
+      "example": "The meeting kicks off at 9."
+    },
+    {
+      "word": "look forward to",
+      "category": "General",
+      "meaning_ja": "楽しみにする",
+      "difficulty": "basic",
+      "example": "I look forward to meeting you."
+    },
+    {
+      "word": "make ends meet",
+      "category": "Idiom",
+      "meaning_ja": "収支を合わせる",
+      "difficulty": "intermediate",
+      "example": "It's hard to make ends meet."
+    },
+    {
+      "word": "miss the boat",
+      "category": "Idiom",
+      "meaning_ja": "好機を逃す",
+      "difficulty": "intermediate",
+      "example": "We missed the boat on that investment."
+    },
+    {
+      "word": "number cruncher",
+      "category": "Idiom",
+      "meaning_ja": "計算が得意な人",
+      "difficulty": "intermediate",
+      "example": "He is a real number cruncher."
+    },
+    {
+      "word": "on hold",
+      "category": "General",
+      "meaning_ja": "保留中で",
+      "difficulty": "basic",
+      "example": "The project is on hold."
+    },
+    {
+      "word": "out of pocket",
+      "category": "Idiom",
+      "meaning_ja": "自腹で、連絡がつかない",
+      "difficulty": "intermediate",
+      "example": "I paid for lunch out of pocket."
+    },
+    {
+      "word": "pay off",
+      "category": "General",
+      "meaning_ja": "完済する、実を結ぶ",
+      "difficulty": "basic",
+      "example": "Hard work pays off."
+    },
+    {
+      "word": "pick someone's brain",
+      "category": "Idiom",
+      "meaning_ja": "知恵を借りる",
+      "difficulty": "intermediate",
+      "example": "Can I pick your brain for a minute?"
+    },
+    {
+      "word": "play it by ear",
+      "category": "Idiom",
+      "meaning_ja": "臨機応変にやる",
+      "difficulty": "intermediate",
+      "example": "Let's play it by ear."
+    },
+    {
+      "word": "pull the plug",
+      "category": "Idiom",
+      "meaning_ja": "中止する",
+      "difficulty": "intermediate",
+      "example": "They pulled the plug on the show."
+    },
+    {
+      "word": "reach out",
+      "category": "General",
+      "meaning_ja": "連絡する",
+      "difficulty": "basic",
+      "example": "Feel free to reach out to me."
+    },
+    {
+      "word": "run by",
+      "category": "General",
+      "meaning_ja": "相談する、確認する",
+      "difficulty": "basic",
+      "example": "Run that idea by me again."
+    },
+    {
+      "word": "sign off",
+      "category": "General",
+      "meaning_ja": "承認する、終了する",
+      "difficulty": "basic",
+      "example": "The manager needs to sign off on this."
+    },
+    {
+      "word": "stand out",
+      "category": "General",
+      "meaning_ja": "目立つ",
+      "difficulty": "basic",
+      "example": "Her resume stands out."
+    },
+    {
+      "word": "step up",
+      "category": "General",
+      "meaning_ja": "強化する、進み出る",
+      "difficulty": "intermediate",
+      "example": "We need to step up our security."
+    },
+    {
+      "word": "take off",
+      "category": "General",
+      "meaning_ja": "軌道に乗る、離陸する",
+      "difficulty": "basic",
+      "example": "Sales really took off last month."
+    },
+    {
+      "word": "track record",
+      "category": "Business",
+      "meaning_ja": "実績",
+      "difficulty": "intermediate",
+      "example": "He has a proven track record."
+    },
+    {
+      "word": "under the table",
+      "category": "Idiom",
+      "meaning_ja": "不正に、こっそりと",
+      "difficulty": "intermediate",
+      "example": "He was paid under the table."
+    },
+    {
+      "word": "value add",
+      "category": "Business",
+      "meaning_ja": "付加価値",
+      "difficulty": "intermediate",
+      "example": "What is the value add of this service?"
+    },
+    {
+      "word": "walk the talk",
+      "category": "Idiom",
+      "meaning_ja": "有言実行する",
+      "difficulty": "advanced",
+      "example": "Leaders must walk the talk."
+    },
+    {
+      "word": "win over",
+      "category": "General",
+      "meaning_ja": "味方につける",
+      "difficulty": "intermediate",
+      "example": "We need to win over the clients."
+    },
+    {
+      "word": "work out",
+      "category": "General",
+      "meaning_ja": "解決する、うまくいく",
+      "difficulty": "basic",
+      "example": "Things will work out."
+    },
+    {
+      "word": "wrap up",
+      "category": "General",
+      "meaning_ja": "仕上げる、終える",
+      "difficulty": "basic",
+      "example": "Let's wrap up the meeting."
+    },
+    {
+      "word": "write off",
+      "category": "Finance",
+      "meaning_ja": "帳消しにする",
+      "difficulty": "intermediate",
+      "example": "They had to write off the debt."
+    },
+    {
+      "word": "accrue",
+      "category": "Finance",
+      "meaning_ja": "生じる、蓄積する",
+      "difficulty": "advanced",
+      "example": "Interest will accrue on the account."
+    },
+    {
+      "word": "accumulate",
+      "category": "General",
+      "meaning_ja": "蓄積する",
+      "difficulty": "intermediate",
+      "example": "Debts began to accumulate."
+    },
+    {
+      "word": "allocate",
+      "category": "Business",
+      "meaning_ja": "割り当てる",
+      "difficulty": "intermediate",
+      "example": "Resources were allocated to the project."
+    },
+    {
+      "word": "amortize",
+      "category": "Finance",
+      "meaning_ja": "償却する",
+      "difficulty": "advanced",
+      "example": "We amortize the cost over five years."
+    },
+    {
+      "word": "appreciate",
+      "category": "Finance",
+      "meaning_ja": "価値が上がる、感謝する",
+      "difficulty": "intermediate",
+      "example": "The property appreciated in value."
+    },
+    {
+      "word": "depreciate",
+      "category": "Finance",
+      "meaning_ja": "価値が下がる、減価償却する",
+      "difficulty": "intermediate",
+      "example": "New cars depreciate quickly."
+    },
+    {
+      "word": "balance sheet",
+      "category": "Finance",
+      "meaning_ja": "貸借対照表",
+      "difficulty": "intermediate",
+      "example": "The balance sheet shows our assets."
+    },
+    {
+      "word": "bear market",
+      "category": "Finance",
+      "meaning_ja": "弱気市場",
+      "difficulty": "advanced",
+      "example": "Investors are cautious in a bear market."
+    },
+    {
+      "word": "bull market",
+      "category": "Finance",
+      "meaning_ja": "強気市場",
+      "difficulty": "advanced",
+      "example": "A bull market encourages investment."
+    },
+    {
+      "word": "bond",
+      "category": "Finance",
+      "meaning_ja": "債券",
+      "difficulty": "intermediate",
+      "example": "Government bonds are safe investments."
+    },
+    {
+      "word": "break-even",
+      "category": "Finance",
+      "meaning_ja": "損益分岐点",
+      "difficulty": "intermediate",
+      "example": "We reached the break-even point."
+    },
+    {
+      "word": "broker",
+      "category": "Finance",
+      "meaning_ja": "仲介人",
+      "difficulty": "basic",
+      "example": "Contact your insurance broker."
+    },
+    {
+      "word": "capital gain",
+      "category": "Finance",
+      "meaning_ja": "キャピタルゲイン",
+      "difficulty": "advanced",
+      "example": "Capital gains are taxed."
+    },
+    {
+      "word": "cash flow",
+      "category": "Finance",
+      "meaning_ja": "キャッシュフロー",
+      "difficulty": "intermediate",
+      "example": "Positive cash flow is vital."
+    },
+    {
+      "word": "collateral",
+      "category": "Finance",
+      "meaning_ja": "担保",
+      "difficulty": "advanced",
+      "example": "He used his house as collateral."
+    },
+    {
+      "word": "commodity",
+      "category": "Economy",
+      "meaning_ja": "商品、産物",
+      "difficulty": "intermediate",
+      "example": "Oil is a valuable commodity."
+    },
+    {
+      "word": "conglomerate",
+      "category": "Business",
+      "meaning_ja": "巨大複合企業",
+      "difficulty": "advanced",
+      "example": "A media conglomerate owns the channel."
+    },
+    {
+      "word": "creditor",
+      "category": "Finance",
+      "meaning_ja": "債権者",
+      "difficulty": "intermediate",
+      "example": "The company owes money to creditors."
+    },
+    {
+      "word": "debtor",
+      "category": "Finance",
+      "meaning_ja": "債務者",
+      "difficulty": "intermediate",
+      "example": "The debtor filed for bankruptcy."
+    },
+    {
+      "word": "deficit",
+      "category": "Finance",
+      "meaning_ja": "赤字、不足",
+      "difficulty": "intermediate",
+      "example": "The trade deficit widened."
+    },
+    {
+      "word": "deflation",
+      "category": "Economy",
+      "meaning_ja": "デフレ",
+      "difficulty": "intermediate",
+      "example": "Deflation hurts the economy."
+    },
+    {
+      "word": "disbursement",
+      "category": "Finance",
+      "meaning_ja": "支払い",
+      "difficulty": "advanced",
+      "example": "The disbursement of funds was delayed."
+    },
+    {
+      "word": "diversification",
+      "category": "Finance",
+      "meaning_ja": "分散、多様化",
+      "difficulty": "intermediate",
+      "example": "Diversification reduces risk."
+    },
+    {
+      "word": "down payment",
+      "category": "Finance",
+      "meaning_ja": "頭金",
+      "difficulty": "basic",
+      "example": "We made a down payment on a car."
+    },
+    {
+      "word": "economize",
+      "category": "Finance",
+      "meaning_ja": "節約する",
+      "difficulty": "intermediate",
+      "example": "We must economize on fuel."
+    },
+    {
+      "word": "embargo",
+      "category": "Economy",
+      "meaning_ja": "通商停止",
+      "difficulty": "advanced",
+      "example": "An embargo was placed on the country."
+    },
+    {
+      "word": "expenditure",
+      "category": "Finance",
+      "meaning_ja": "支出",
+      "difficulty": "intermediate",
+      "example": "Public expenditure has increased."
+    },
+    {
+      "word": "fiscal year",
+      "category": "Finance",
+      "meaning_ja": "会計年度",
+      "difficulty": "intermediate",
+      "example": "The fiscal year ends in March."
+    },
+    {
+      "word": "fixed cost",
+      "category": "Finance",
+      "meaning_ja": "固定費",
+      "difficulty": "intermediate",
+      "example": "Rent is a fixed cost."
+    },
+    {
+      "word": "fluctuate",
+      "category": "Economy",
+      "meaning_ja": "変動する",
+      "difficulty": "intermediate",
+      "example": "Prices fluctuate with demand."
+    },
+    {
+      "word": "gross",
+      "category": "Finance",
+      "meaning_ja": "総計の",
+      "difficulty": "basic",
+      "example": "Gross income is before tax."
+    },
+    {
+      "word": "hedge",
+      "category": "Finance",
+      "meaning_ja": "リスク回避策",
+      "difficulty": "advanced",
+      "example": "They hedge against currency fluctuations."
+    },
+    {
+      "word": "holding company",
+      "category": "Business",
+      "meaning_ja": "持株会社",
+      "difficulty": "advanced",
+      "example": "The holding company owns several brands."
+    },
+    {
+      "word": "insolvent",
+      "category": "Finance",
+      "meaning_ja": "支払い不能の",
+      "difficulty": "advanced",
+      "example": "The firm became insolvent."
+    },
+    {
+      "word": "intangible",
+      "category": "Business",
+      "meaning_ja": "無形の",
+      "difficulty": "advanced",
+      "example": "Brand value is an intangible asset."
+    },
+    {
+      "word": "joint stock",
+      "category": "Finance",
+      "meaning_ja": "合資の",
+      "difficulty": "advanced",
+      "example": "It is a joint stock company."
+    },
+    {
+      "word": "ledger",
+      "category": "Finance",
+      "meaning_ja": "元帳",
+      "difficulty": "advanced",
+      "example": "Entries were made in the ledger."
+    },
+    {
+      "word": "leverage",
+      "category": "Finance",
+      "meaning_ja": "レバレッジ、活用する",
+      "difficulty": "intermediate",
+      "example": "We leverage technology to grow."
+    },
+    {
+      "word": "liquidation",
+      "category": "Finance",
+      "meaning_ja": "清算",
+      "difficulty": "advanced",
+      "example": "The shop went into liquidation."
+    },
+    {
+      "word": "liquidity",
+      "category": "Finance",
+      "meaning_ja": "流動性",
+      "difficulty": "advanced",
+      "example": "The bank has liquidity problems."
+    },
+    {
+      "word": "lucrative",
+      "category": "Business",
+      "meaning_ja": "儲かる",
+      "difficulty": "intermediate",
+      "example": "It was a lucrative deal."
+    },
+    {
+      "word": "margin call",
+      "category": "Finance",
+      "meaning_ja": "追い証",
+      "difficulty": "advanced",
+      "example": "He received a margin call."
+    },
+    {
+      "word": "maturity",
+      "category": "Finance",
+      "meaning_ja": "満期",
+      "difficulty": "advanced",
+      "example": "The bond reached maturity."
+    },
+    {
+      "word": "merchandise",
+      "category": "Business",
+      "meaning_ja": "商品",
+      "difficulty": "basic",
+      "example": "They sell official merchandise."
+    },
+    {
+      "word": "net worth",
+      "category": "Finance",
+      "meaning_ja": "純資産",
+      "difficulty": "intermediate",
+      "example": "His net worth is substantial."
+    },
+    {
+      "word": "overhead",
+      "category": "Finance",
+      "meaning_ja": "経費",
+      "difficulty": "intermediate",
+      "example": "We need to reduce overheads."
+    },
+    {
+      "word": "par value",
+      "category": "Finance",
+      "meaning_ja": "額面価格",
+      "difficulty": "advanced",
+      "example": "Shares were issued at par value."
+    },
+    {
+      "word": "payroll",
+      "category": "HR",
+      "meaning_ja": "給与支払い簿",
+      "difficulty": "basic",
+      "example": "He is on the payroll."
+    },
+    {
+      "word": "petty cash",
+      "category": "Finance",
+      "meaning_ja": "小口現金",
+      "difficulty": "intermediate",
+      "example": "Take it from petty cash."
+    },
+    {
+      "word": "premium",
+      "category": "Finance",
+      "meaning_ja": "保険料、割増金",
+      "difficulty": "intermediate",
+      "example": "Insurance premiums rose."
+    },
+    {
+      "word": "prime rate",
+      "category": "Finance",
+      "meaning_ja": "最優遇貸出金利",
+      "difficulty": "advanced",
+      "example": "The prime rate was cut."
+    },
+    {
+      "word": "privatization",
+      "category": "Economy",
+      "meaning_ja": "民営化",
+      "difficulty": "advanced",
+      "example": "Privatization of the railway."
+    },
+    {
+      "word": "procure",
+      "category": "Business",
+      "meaning_ja": "調達する",
+      "difficulty": "advanced",
+      "example": "We need to procure materials."
+    },
+    {
+      "word": "proprietorship",
+      "category": "Business",
+      "meaning_ja": "個人経営",
+      "difficulty": "advanced",
+      "example": "Sole proprietorship is common."
+    },
+    {
+      "word": "prospectus",
+      "category": "Finance",
+      "meaning_ja": "目論見書",
+      "difficulty": "advanced",
+      "example": "Read the prospectus before investing."
+    },
+    {
+      "word": "rally",
+      "category": "Finance",
+      "meaning_ja": "持ち直す",
+      "difficulty": "advanced",
+      "example": "Stock prices rallied today."
+    },
+    {
+      "word": "redeem",
+      "category": "Finance",
+      "meaning_ja": "換金する、償還する",
+      "difficulty": "intermediate",
+      "example": "Redeem your points for cash."
+    },
+    {
+      "word": "remittance",
+      "category": "Finance",
+      "meaning_ja": "送金",
+      "difficulty": "advanced",
+      "example": "Remittance advice was sent."
+    },
+    {
+      "word": "remuneration",
+      "category": "HR",
+      "meaning_ja": "報酬",
+      "difficulty": "advanced",
+      "example": "The job offers good remuneration."
+    },
+    {
+      "word": "reserve",
+      "category": "Finance",
+      "meaning_ja": "積立金、予備",
+      "difficulty": "intermediate",
+      "example": "Cash reserves are low."
+    },
+    {
+      "word": "royalty",
+      "category": "Business",
+      "meaning_ja": "印税、特許使用料",
+      "difficulty": "intermediate",
+      "example": "The author receives royalties."
+    },
+    {
+      "word": "securities",
+      "category": "Finance",
+      "meaning_ja": "証券",
+      "difficulty": "advanced",
+      "example": "The securities market is volatile."
+    },
+    {
+      "word": "slump",
+      "category": "Economy",
+      "meaning_ja": "急落、不振",
+      "difficulty": "intermediate",
+      "example": "Sales are in a slump."
+    },
+    {
+      "word": "solvency",
+      "category": "Finance",
+      "meaning_ja": "支払い能力",
+      "difficulty": "advanced",
+      "example": "Solvency ratios are important."
+    },
+    {
+      "word": "speculation",
+      "category": "Finance",
+      "meaning_ja": "投機",
+      "difficulty": "advanced",
+      "example": "Real estate speculation is risky."
+    },
+    {
+      "word": "stagnation",
+      "category": "Economy",
+      "meaning_ja": "停滞",
+      "difficulty": "advanced",
+      "example": "Economic stagnation continues."
+    },
+    {
+      "word": "stock option",
+      "category": "Finance",
+      "meaning_ja": "ストックオプション",
+      "difficulty": "intermediate",
+      "example": "Employees get stock options."
+    },
+    {
+      "word": "subsidy",
+      "category": "Economy",
+      "meaning_ja": "補助金",
+      "difficulty": "intermediate",
+      "example": "Farmers receive subsidies."
+    },
+    {
+      "word": "surplus",
+      "category": "Economy",
+      "meaning_ja": "黒字、余剰",
+      "difficulty": "intermediate",
+      "example": "There is a budget surplus."
+    },
+    {
+      "word": "syndicate",
+      "category": "Business",
+      "meaning_ja": "企業連合",
+      "difficulty": "advanced",
+      "example": "A banking syndicate funded the project."
+    },
+    {
+      "word": "tangible",
+      "category": "Business",
+      "meaning_ja": "有形の",
+      "difficulty": "intermediate",
+      "example": "Tangible assets include machinery."
+    },
+    {
+      "word": "tax haven",
+      "category": "Finance",
+      "meaning_ja": "租税回避地",
+      "difficulty": "intermediate",
+      "example": "The company is registered in a tax haven."
+    },
+    {
+      "word": "treasury",
+      "category": "Finance",
+      "meaning_ja": "財務省、国庫",
+      "difficulty": "intermediate",
+      "example": "Treasury bills are secure."
+    },
+    {
+      "word": "underwrite",
+      "category": "Finance",
+      "meaning_ja": "引き受ける",
+      "difficulty": "advanced",
+      "example": "The bank underwrote the loan."
+    },
+    {
+      "word": "valuation",
+      "category": "Finance",
+      "meaning_ja": "評価額",
+      "difficulty": "intermediate",
+      "example": "The company's valuation doubled."
+    },
+    {
+      "word": "variable cost",
+      "category": "Finance",
+      "meaning_ja": "変動費",
+      "difficulty": "intermediate",
+      "example": "Variable costs depend on output."
+    },
+    {
+      "word": "venture",
+      "category": "Business",
+      "meaning_ja": "投機的事業",
+      "difficulty": "intermediate",
+      "example": "It is a joint venture."
+    },
+    {
+      "word": "zoning",
+      "category": "Legal",
+      "meaning_ja": "地帯制、ゾーニング",
+      "difficulty": "advanced",
+      "example": "Zoning laws restrict building."
+    },
+    {
+      "word": "absenteeism",
+      "category": "HR",
+      "meaning_ja": "常習的欠勤",
+      "difficulty": "intermediate",
+      "example": "High absenteeism is a problem."
+    },
+    {
+      "word": "accomplishment",
+      "category": "General",
+      "meaning_ja": "業績、達成",
+      "difficulty": "basic",
+      "example": "It was a great accomplishment."
+    },
+    {
+      "word": "administer",
+      "category": "Management",
+      "meaning_ja": "管理する",
+      "difficulty": "intermediate",
+      "example": "He administers the fund."
+    },
+    {
+      "word": "aptitude",
+      "category": "HR",
+      "meaning_ja": "適性",
+      "difficulty": "intermediate",
+      "example": "She shows an aptitude for sales."
+    },
+    {
+      "word": "arbitration",
+      "category": "Legal",
+      "meaning_ja": "仲裁",
+      "difficulty": "advanced",
+      "example": "The dispute went to arbitration."
+    },
+    {
+      "word": "attrition",
+      "category": "HR",
+      "meaning_ja": "自然減",
+      "difficulty": "advanced",
+      "example": "Staff attrition is high."
+    },
+    {
+      "word": "autonomy",
+      "category": "Management",
+      "meaning_ja": "自主性",
+      "difficulty": "intermediate",
+      "example": "Workers want more autonomy."
+    },
+    {
+      "word": "bias",
+      "category": "HR",
+      "meaning_ja": "偏見",
+      "difficulty": "intermediate",
+      "example": "We must avoid hiring bias."
+    },
+    {
+      "word": "burnout",
+      "category": "HR",
+      "meaning_ja": "燃え尽き症候群",
+      "difficulty": "intermediate",
+      "example": "Workplace burnout is common."
+    },
+    {
+      "word": "career path",
+      "category": "HR",
+      "meaning_ja": "キャリアパス",
+      "difficulty": "basic",
+      "example": "Discuss your career path."
+    },
+    {
+      "word": "CEO",
+      "category": "Management",
+      "meaning_ja": "最高経営責任者",
+      "difficulty": "basic",
+      "example": "The CEO resigned."
+    },
+    {
+      "word": "CFO",
+      "category": "Management",
+      "meaning_ja": "最高財務責任者",
+      "difficulty": "basic",
+      "example": "The CFO manages the budget."
+    },
+    {
+      "word": "COO",
+      "category": "Management",
+      "meaning_ja": "最高執行責任者",
+      "difficulty": "basic",
+      "example": "The COO oversees operations."
+    },
+    {
+      "word": "CTO",
+      "category": "Management",
+      "meaning_ja": "最高技術責任者",
+      "difficulty": "basic",
+      "example": "The CTO leads the tech team."
+    },
+    {
+      "word": "cohesion",
+      "category": "HR",
+      "meaning_ja": "結束",
+      "difficulty": "advanced",
+      "example": "Team cohesion is strong."
+    },
+    {
+      "word": "competency",
+      "category": "HR",
+      "meaning_ja": "能力",
+      "difficulty": "intermediate",
+      "example": "Core competencies were assessed."
+    },
+    {
+      "word": "constructive",
+      "category": "General",
+      "meaning_ja": "建設的な",
+      "difficulty": "intermediate",
+      "example": "Constructive criticism is helpful."
+    },
+    {
+      "word": "consultation",
+      "category": "Business",
+      "meaning_ja": "諮問、相談",
+      "difficulty": "intermediate",
+      "example": "We are in consultation with experts."
+    },
+    {
+      "word": "counseling",
+      "category": "HR",
+      "meaning_ja": "カウンセリング",
+      "difficulty": "basic",
+      "example": "Employee counseling is available."
+    },
+    {
+      "word": "designation",
+      "category": "HR",
+      "meaning_ja": "指名、役職",
+      "difficulty": "advanced",
+      "example": "His official designation is Director."
+    },
+    {
+      "word": "disciplinary",
+      "category": "HR",
+      "meaning_ja": "懲戒の",
+      "difficulty": "intermediate",
+      "example": "Disciplinary action was taken."
+    },
+    {
+      "word": "discrimination",
+      "category": "HR",
+      "meaning_ja": "差別",
+      "difficulty": "intermediate",
+      "example": "Discrimination is illegal."
+    },
+    {
+      "word": "dispute",
+      "category": "Legal",
+      "meaning_ja": "紛争",
+      "difficulty": "intermediate",
+      "example": "The labor dispute was settled."
+    },
+    {
+      "word": "empowerment",
+      "category": "Management",
+      "meaning_ja": "権限委譲",
+      "difficulty": "intermediate",
+      "example": "Employee empowerment boosts morale."
+    },
+    {
+      "word": "engagement",
+      "category": "HR",
+      "meaning_ja": "従事、関与",
+      "difficulty": "intermediate",
+      "example": "Employee engagement is low."
+    },
+    {
+      "word": "entitlement",
+      "category": "HR",
+      "meaning_ja": "権利、資格",
+      "difficulty": "advanced",
+      "example": "Holiday entitlement varies."
+    },
+    {
+      "word": "ergonomic",
+      "category": "General",
+      "meaning_ja": "人間工学に基づく",
+      "difficulty": "intermediate",
+      "example": "We bought ergonomic chairs."
+    },
+    {
+      "word": "executive",
+      "category": "Management",
+      "meaning_ja": "重役",
+      "difficulty": "basic",
+      "example": "Top executives met today."
+    },
+    {
+      "word": "exit interview",
+      "category": "HR",
+      "meaning_ja": "退職者面接",
+      "difficulty": "intermediate",
+      "example": "She had an exit interview."
+    },
+    {
+      "word": "expertise",
+      "category": "General",
+      "meaning_ja": "専門知識",
+      "difficulty": "intermediate",
+      "example": "We need his technical expertise."
+    },
+    {
+      "word": "grievance",
+      "category": "HR",
+      "meaning_ja": "不満、苦情",
+      "difficulty": "advanced",
+      "example": "He filed a grievance."
+    },
+    {
+      "word": "harass",
+      "category": "HR",
+      "meaning_ja": "悩ませる、ハラスメントする",
+      "difficulty": "intermediate",
+      "example": "Harassment is not tolerated."
+    },
+    {
+      "word": "headhunter",
+      "category": "HR",
+      "meaning_ja": "人材スカウト",
+      "difficulty": "intermediate",
+      "example": "A headhunter contacted me."
+    },
+    {
+      "word": "hierarchy",
+      "category": "Management",
+      "meaning_ja": "階層",
+      "difficulty": "intermediate",
+      "example": "The corporate hierarchy is flat."
+    },
+    {
+      "word": "human capital",
+      "category": "HR",
+      "meaning_ja": "人的資本",
+      "difficulty": "advanced",
+      "example": "Invest in human capital."
+    },
+    {
+      "word": "induction",
+      "category": "HR",
+      "meaning_ja": "就任、導入",
+      "difficulty": "intermediate",
+      "example": "Induction training starts Monday."
+    },
+    {
+      "word": "initiative",
+      "category": "General",
+      "meaning_ja": "主導権、自発性",
+      "difficulty": "intermediate",
+      "example": "Take the initiative."
+    },
+    {
+      "word": "intern",
+      "category": "HR",
+      "meaning_ja": "実習生",
+      "difficulty": "basic",
+      "example": "We have a summer intern."
+    },
+    {
+      "word": "job description",
+      "category": "HR",
+      "meaning_ja": "職務記述書",
+      "difficulty": "basic",
+      "example": "Read the job description."
+    },
+    {
+      "word": "mediation",
+      "category": "Legal",
+      "meaning_ja": "調停",
+      "difficulty": "advanced",
+      "example": "Mediation failed to resolve the issue."
+    },
+    {
+      "word": "micromanage",
+      "category": "Management",
+      "meaning_ja": "細かく管理しすぎる",
+      "difficulty": "intermediate",
+      "example": "Don't micromanage your team."
+    },
+    {
+      "word": "misconduct",
+      "category": "Legal",
+      "meaning_ja": "不正行為",
+      "difficulty": "intermediate",
+      "example": "He was fired for misconduct."
+    },
+    {
+      "word": "motivation",
+      "category": "HR",
+      "meaning_ja": "動機づけ",
+      "difficulty": "basic",
+      "example": "Motivation is key to success."
+    },
+    {
+      "word": "nepotism",
+      "category": "HR",
+      "meaning_ja": "縁故採用",
+      "difficulty": "advanced",
+      "example": "The company was accused of nepotism."
+    },
+    {
+      "word": "occupation",
+      "category": "General",
+      "meaning_ja": "職業",
+      "difficulty": "basic",
+      "example": "State your occupation."
+    },
+    {
+      "word": "organigram",
+      "category": "Management",
+      "meaning_ja": "組織図",
+      "difficulty": "advanced",
+      "example": "Update the organigram."
+    },
+    {
+      "word": "orientation",
+      "category": "HR",
+      "meaning_ja": "オリエンテーション",
+      "difficulty": "basic",
+      "example": "New hire orientation is today."
+    },
+    {
+      "word": "outplacement",
+      "category": "HR",
+      "meaning_ja": "再就職支援",
+      "difficulty": "advanced",
+      "example": "We offer outplacement services."
+    },
+    {
+      "word": "personnel",
+      "category": "HR",
+      "meaning_ja": "職員、人事課",
+      "difficulty": "intermediate",
+      "example": "Contact the personnel department."
+    },
+    {
+      "word": "placement",
+      "category": "HR",
+      "meaning_ja": "配置",
+      "difficulty": "intermediate",
+      "example": "Job placement rates are high."
+    },
+    {
+      "word": "poaching",
+      "category": "HR",
+      "meaning_ja": "引き抜き",
+      "difficulty": "advanced",
+      "example": "Competitors are poaching our staff."
+    },
+    {
+      "word": "predecessor",
+      "category": "Management",
+      "meaning_ja": "前任者",
+      "difficulty": "intermediate",
+      "example": "His predecessor was very popular."
+    },
+    {
+      "word": "profession",
+      "category": "General",
+      "meaning_ja": "専門職",
+      "difficulty": "basic",
+      "example": "Teaching is a noble profession."
+    },
+    {
+      "word": "proficiency",
+      "category": "HR",
+      "meaning_ja": "熟達",
+      "difficulty": "intermediate",
+      "example": "Language proficiency is required."
+    },
+    {
+      "word": "qualification",
+      "category": "HR",
+      "meaning_ja": "資格",
+      "difficulty": "basic",
+      "example": "She has the right qualifications."
+    },
+    {
+      "word": "recruitment",
+      "category": "HR",
+      "meaning_ja": "採用",
+      "difficulty": "intermediate",
+      "example": "The recruitment process is long."
+    },
+    {
+      "word": "redundancy",
+      "category": "HR",
+      "meaning_ja": "余剰人員整理",
+      "difficulty": "advanced",
+      "example": "He faces redundancy."
+    },
+    {
+      "word": "screening",
+      "category": "HR",
+      "meaning_ja": "選考、審査",
+      "difficulty": "intermediate",
+      "example": "Candidate screening continues."
+    },
+    {
+      "word": "seniority",
+      "category": "HR",
+      "meaning_ja": "年功",
+      "difficulty": "intermediate",
+      "example": "Promotion is based on seniority."
+    },
+    {
+      "word": "severance",
+      "category": "HR",
+      "meaning_ja": "退職手当",
+      "difficulty": "advanced",
+      "example": "He received a severance package."
+    },
+    {
+      "word": "skill set",
+      "category": "HR",
+      "meaning_ja": "スキルセット",
+      "difficulty": "intermediate",
+      "example": "Expand your skill set."
+    },
+    {
+      "word": "staffing",
+      "category": "HR",
+      "meaning_ja": "職員配置",
+      "difficulty": "intermediate",
+      "example": "Staffing levels are low."
+    },
+    {
+      "word": "subordinate",
+      "category": "Management",
+      "meaning_ja": "部下",
+      "difficulty": "intermediate",
+      "example": "Treat subordinates with respect."
+    },
+    {
+      "word": "successor",
+      "category": "Management",
+      "meaning_ja": "後継者",
+      "difficulty": "intermediate",
+      "example": "He named his successor."
+    },
+    {
+      "word": "suspension",
+      "category": "HR",
+      "meaning_ja": "停職",
+      "difficulty": "intermediate",
+      "example": "He is under suspension."
+    },
+    {
+      "word": "teamwork",
+      "category": "HR",
+      "meaning_ja": "チームワーク",
+      "difficulty": "basic",
+      "example": "Teamwork is essential."
+    },
+    {
+      "word": "temp",
+      "category": "HR",
+      "meaning_ja": "臨時雇用者",
+      "difficulty": "basic",
+      "example": "We hired a temp."
+    },
+    {
+      "word": "vacancy",
+      "category": "HR",
+      "meaning_ja": "欠員",
+      "difficulty": "intermediate",
+      "example": "There is a vacancy in sales."
+    },
+    {
+      "word": "vocation",
+      "category": "General",
+      "meaning_ja": "天職",
+      "difficulty": "advanced",
+      "example": "She found her vocation."
+    },
+    {
+      "word": "workforce",
+      "category": "HR",
+      "meaning_ja": "労働力",
+      "difficulty": "intermediate",
+      "example": "A skilled workforce is needed."
+    },
+    {
+      "word": "workload",
+      "category": "HR",
+      "meaning_ja": "仕事量",
+      "difficulty": "intermediate",
+      "example": "My workload is heavy."
+    },
+    {
+      "word": "assembly",
+      "category": "Production",
+      "meaning_ja": "組み立て",
+      "difficulty": "intermediate",
+      "example": "The assembly line moves fast."
+    },
+    {
+      "word": "automation",
+      "category": "Production",
+      "meaning_ja": "自動化",
+      "difficulty": "intermediate",
+      "example": "Automation reduces labor costs."
+    },
+    {
+      "word": "blueprint",
+      "category": "Production",
+      "meaning_ja": "設計図",
+      "difficulty": "intermediate",
+      "example": "The architect approved the blueprint."
+    },
+    {
+      "word": "bottleneck",
+      "category": "Production",
+      "meaning_ja": "障害、隘路",
+      "difficulty": "advanced",
+      "example": "We need to identify the bottleneck."
+    },
+    {
+      "word": "capacity",
+      "category": "Production",
+      "meaning_ja": "生産能力、容量",
+      "difficulty": "basic",
+      "example": "The factory is operating at full capacity."
+    },
+    {
+      "word": "defect",
+      "category": "Production",
+      "meaning_ja": "欠陥",
+      "difficulty": "intermediate",
+      "example": "There was a defect in the product."
+    },
+    {
+      "word": "efficiency",
+      "category": "Production",
+      "meaning_ja": "効率",
+      "difficulty": "basic",
+      "example": "We must improve energy efficiency."
+    },
+    {
+      "word": "fabricate",
+      "category": "Production",
+      "meaning_ja": "製造する、捏造する",
+      "difficulty": "advanced",
+      "example": "They fabricate steel parts."
+    },
+    {
+      "word": "flaw",
+      "category": "Production",
+      "meaning_ja": "不備、欠点",
+      "difficulty": "intermediate",
+      "example": "A design flaw caused the failure."
+    },
+    {
+      "word": "lean",
+      "category": "Production",
+      "meaning_ja": "無駄のない",
+      "difficulty": "advanced",
+      "example": "We adopted lean manufacturing."
+    },
+    {
+      "word": "machinery",
+      "category": "Production",
+      "meaning_ja": "機械類",
+      "difficulty": "basic",
+      "example": "Heavy machinery is used here."
+    },
+    {
+      "word": "mass production",
+      "category": "Production",
+      "meaning_ja": "大量生産",
+      "difficulty": "basic",
+      "example": "Mass production lowered the price."
+    },
+    {
+      "word": "mechanism",
+      "category": "General",
+      "meaning_ja": "仕組み",
+      "difficulty": "intermediate",
+      "example": "The mechanism is complex."
+    },
+    {
+      "word": "output",
+      "category": "Production",
+      "meaning_ja": "生産高",
+      "difficulty": "intermediate",
+      "example": "Output has doubled."
+    },
+    {
+      "word": "plant",
+      "category": "Production",
+      "meaning_ja": "工場",
+      "difficulty": "basic",
+      "example": "They built a new chemical plant."
+    },
+    {
+      "word": "process",
+      "category": "General",
+      "meaning_ja": "工程、処理する",
+      "difficulty": "basic",
+      "example": "The production process is efficient."
+    },
+    {
+      "word": "quality control",
+      "category": "Production",
+      "meaning_ja": "品質管理",
+      "difficulty": "intermediate",
+      "example": "Quality control checks every item."
+    },
+    {
+      "word": "raw material",
+      "category": "Production",
+      "meaning_ja": "原材料",
+      "difficulty": "intermediate",
+      "example": "Raw material costs are rising."
+    },
+    {
+      "word": "recall",
+      "category": "Production",
+      "meaning_ja": "回収する",
+      "difficulty": "intermediate",
+      "example": "The company recalled the faulty cars."
+    },
+    {
+      "word": "supply chain",
+      "category": "Logistics",
+      "meaning_ja": "サプライチェーン",
+      "difficulty": "intermediate",
+      "example": "Supply chain management is critical."
+    },
+    {
+      "word": "throughput",
+      "category": "Production",
+      "meaning_ja": "処理能力",
+      "difficulty": "advanced",
+      "example": "We increased the network throughput."
+    },
+    {
+      "word": "warehouse",
+      "category": "Logistics",
+      "meaning_ja": "倉庫",
+      "difficulty": "basic",
+      "example": "Goods are stored in the warehouse."
+    },
+    {
+      "word": "waste",
+      "category": "Production",
+      "meaning_ja": "廃棄物、無駄",
+      "difficulty": "basic",
+      "example": "Reduce industrial waste."
+    },
+    {
+      "word": "acquire",
+      "category": "Business",
+      "meaning_ja": "買収する、獲得する",
+      "difficulty": "intermediate",
+      "example": "They acquired a competitor."
+    },
+    {
+      "word": "adapt",
+      "category": "General",
+      "meaning_ja": "適応する",
+      "difficulty": "intermediate",
+      "example": "We must adapt to market changes."
+    },
+    {
+      "word": "address",
+      "category": "General",
+      "meaning_ja": "対処する、話しかける",
+      "difficulty": "basic",
+      "example": "Please address the issue immediately."
+    },
+    {
+      "word": "advise",
+      "category": "General",
+      "meaning_ja": "助言する",
+      "difficulty": "basic",
+      "example": "He advised us to sell."
+    },
+    {
+      "word": "afford",
+      "category": "Finance",
+      "meaning_ja": "余裕がある",
+      "difficulty": "basic",
+      "example": "We cannot afford any mistakes."
+    },
+    {
+      "word": "anticipate",
+      "category": "General",
+      "meaning_ja": "予想する",
+      "difficulty": "intermediate",
+      "example": "We anticipate strong demand."
+    },
+    {
+      "word": "appeal",
+      "category": "General",
+      "meaning_ja": "訴える、魅力",
+      "difficulty": "intermediate",
+      "example": "The product appeals to teenagers."
+    },
+    {
+      "word": "appoint",
+      "category": "HR",
+      "meaning_ja": "任命する",
+      "difficulty": "intermediate",
+      "example": "She was appointed CEO."
+    },
+    {
+      "word": "approach",
+      "category": "General",
+      "meaning_ja": "取り組む、接近する",
+      "difficulty": "basic",
+      "example": "We need a new approach."
+    },
+    {
+      "word": "arrange",
+      "category": "General",
+      "meaning_ja": "手配する",
+      "difficulty": "basic",
+      "example": "Can you arrange a meeting?"
+    },
+    {
+      "word": "assist",
+      "category": "General",
+      "meaning_ja": "支援する",
+      "difficulty": "basic",
+      "example": "My assistant will assist you."
+    },
+    {
+      "word": "assume",
+      "category": "General",
+      "meaning_ja": "仮定する、引き受ける",
+      "difficulty": "intermediate",
+      "example": "Don't assume anything."
+    },
+    {
+      "word": "assure",
+      "category": "General",
+      "meaning_ja": "保証する",
+      "difficulty": "intermediate",
+      "example": "I assure you it is safe."
+    },
+    {
+      "word": "attain",
+      "category": "General",
+      "meaning_ja": "達成する",
+      "difficulty": "intermediate",
+      "example": "We attained our sales goal."
+    },
+    {
+      "word": "attend",
+      "category": "General",
+      "meaning_ja": "出席する",
+      "difficulty": "basic",
+      "example": "Did you attend the conference?"
+    },
+    {
+      "word": "attract",
+      "category": "Marketing",
+      "meaning_ja": "引きつける",
+      "difficulty": "basic",
+      "example": "The ad attracted many customers."
+    },
+    {
+      "word": "avoid",
+      "category": "General",
+      "meaning_ja": "避ける",
+      "difficulty": "basic",
+      "example": "Avoid unnecessary risks."
+    },
+    {
+      "word": "boost",
+      "category": "General",
+      "meaning_ja": "高める",
+      "difficulty": "intermediate",
+      "example": "This will boost productivity."
+    },
+    {
+      "word": "brief",
+      "category": "General",
+      "meaning_ja": "手短に説明する",
+      "difficulty": "intermediate",
+      "example": "Brief me on the situation."
+    },
+    {
+      "word": "calculate",
+      "category": "General",
+      "meaning_ja": "計算する",
+      "difficulty": "basic",
+      "example": "Calculate the total cost."
+    },
+    {
+      "word": "certify",
+      "category": "Legal",
+      "meaning_ja": "証明する",
+      "difficulty": "intermediate",
+      "example": "The document is certified."
+    },
+    {
+      "word": "charge",
+      "category": "Finance",
+      "meaning_ja": "請求する",
+      "difficulty": "basic",
+      "example": "How much do you charge?"
+    },
+    {
+      "word": "claim",
+      "category": "General",
+      "meaning_ja": "主張する、請求する",
+      "difficulty": "basic",
+      "example": "He claimed expenses."
+    },
+    {
+      "word": "combine",
+      "category": "General",
+      "meaning_ja": "結合する",
+      "difficulty": "basic",
+      "example": "Combine the two departments."
+    },
+    {
+      "word": "command",
+      "category": "General",
+      "meaning_ja": "命令する、自在に操る",
+      "difficulty": "intermediate",
+      "example": "She commands respect."
+    },
+    {
+      "word": "commit",
+      "category": "General",
+      "meaning_ja": "約束する、委ねる",
+      "difficulty": "intermediate",
+      "example": "We are committed to quality."
+    },
+    {
+      "word": "communicate",
+      "category": "General",
+      "meaning_ja": "伝える",
+      "difficulty": "basic",
+      "example": "Communicate clearly."
+    },
+    {
+      "word": "compare",
+      "category": "General",
+      "meaning_ja": "比較する",
+      "difficulty": "basic",
+      "example": "Compare prices before buying."
+    },
+    {
+      "word": "compete",
+      "category": "Business",
+      "meaning_ja": "競争する",
+      "difficulty": "basic",
+      "example": "We compete globally."
+    },
+    {
+      "word": "compile",
+      "category": "General",
+      "meaning_ja": "編集する、まとめる",
+      "difficulty": "intermediate",
+      "example": "Compile the data into a report."
+    },
+    {
+      "word": "complain",
+      "category": "General",
+      "meaning_ja": "苦情を言う",
+      "difficulty": "basic",
+      "example": "Customers complained about the delay."
+    },
+    {
+      "word": "complete",
+      "category": "General",
+      "meaning_ja": "完了する",
+      "difficulty": "basic",
+      "example": "Complete the form."
+    },
+    {
+      "word": "comply",
+      "category": "Legal",
+      "meaning_ja": "従う",
+      "difficulty": "intermediate",
+      "example": "We must comply with the law."
+    },
+    {
+      "word": "conclude",
+      "category": "General",
+      "meaning_ja": "結論づける、終える",
+      "difficulty": "intermediate",
+      "example": "The meeting concluded at 5 PM."
+    },
+    {
+      "word": "conduct",
+      "category": "General",
+      "meaning_ja": "実施する",
+      "difficulty": "intermediate",
+      "example": "We conducted a survey."
+    },
+    {
+      "word": "confer",
+      "category": "General",
+      "meaning_ja": "協議する",
+      "difficulty": "advanced",
+      "example": "I need to confer with my boss."
+    },
+    {
+      "word": "confess",
+      "category": "General",
+      "meaning_ja": "白状する",
+      "difficulty": "basic",
+      "example": "He confessed to the mistake."
+    },
+    {
+      "word": "connect",
+      "category": "General",
+      "meaning_ja": "接続する",
+      "difficulty": "basic",
+      "example": "Connect to the server."
+    },
+    {
+      "word": "consider",
+      "category": "General",
+      "meaning_ja": "検討する",
+      "difficulty": "basic",
+      "example": "We will consider your proposal."
+    },
+    {
+      "word": "consist",
+      "category": "General",
+      "meaning_ja": "〜から成る",
+      "difficulty": "intermediate",
+      "example": "The team consists of experts."
+    },
+    {
+      "word": "constitute",
+      "category": "General",
+      "meaning_ja": "構成する",
+      "difficulty": "advanced",
+      "example": "This constitutes a breach of contract."
+    },
+    {
+      "word": "consult",
+      "category": "General",
+      "meaning_ja": "相談する",
+      "difficulty": "basic",
+      "example": "Consult a lawyer."
+    },
+    {
+      "word": "consume",
+      "category": "General",
+      "meaning_ja": "消費する",
+      "difficulty": "basic",
+      "example": "This process consumes a lot of power."
+    },
+    {
+      "word": "contact",
+      "category": "General",
+      "meaning_ja": "連絡する",
+      "difficulty": "basic",
+      "example": "Contact us for more info."
+    },
+    {
+      "word": "contain",
+      "category": "General",
+      "meaning_ja": "含む、封じ込める",
+      "difficulty": "basic",
+      "example": "The report contains errors."
+    },
+    {
+      "word": "continue",
+      "category": "General",
+      "meaning_ja": "続ける",
+      "difficulty": "basic",
+      "example": "Operations will continue."
+    },
+    {
+      "word": "contribute",
+      "category": "General",
+      "meaning_ja": "貢献する",
+      "difficulty": "intermediate",
+      "example": "Everyone contributed to the success."
+    },
+    {
+      "word": "control",
+      "category": "General",
+      "meaning_ja": "管理する",
+      "difficulty": "basic",
+      "example": "Control your spending."
+    },
+    {
+      "word": "cooperate",
+      "category": "General",
+      "meaning_ja": "協力する",
+      "difficulty": "basic",
+      "example": "We need to cooperate."
+    },
+    {
+      "word": "cope",
+      "category": "General",
+      "meaning_ja": "対処する",
+      "difficulty": "intermediate",
+      "example": "Can you cope with the pressure?"
+    },
+    {
+      "word": "correct",
+      "category": "General",
+      "meaning_ja": "訂正する",
+      "difficulty": "basic",
+      "example": "Correct the mistake."
+    },
+    {
+      "word": "correspond",
+      "category": "General",
+      "meaning_ja": "一致する、通信する",
+      "difficulty": "intermediate",
+      "example": "The figures do not correspond."
+    },
+    {
+      "word": "count",
+      "category": "General",
+      "meaning_ja": "数える、重要である",
+      "difficulty": "basic",
+      "example": "Every vote counts."
+    },
+    {
+      "word": "cover",
+      "category": "General",
+      "meaning_ja": "覆う、報道する、賄う",
+      "difficulty": "basic",
+      "example": "Insurance covers the damage."
+    },
+    {
+      "word": "create",
+      "category": "General",
+      "meaning_ja": "創造する",
+      "difficulty": "basic",
+      "example": "Create a new file."
+    },
+    {
+      "word": "credit",
+      "category": "Finance",
+      "meaning_ja": "信用、入金する",
+      "difficulty": "basic",
+      "example": "We credited your account."
+    },
+    {
+      "word": "criticize",
+      "category": "General",
+      "meaning_ja": "批判する",
+      "difficulty": "basic",
+      "example": "Don't criticize without offering solutions."
+    },
+    {
+      "word": "cultivate",
+      "category": "General",
+      "meaning_ja": "養う、耕す",
+      "difficulty": "intermediate",
+      "example": "Cultivate good relationships."
+    },
+    {
+      "word": "cut",
+      "category": "General",
+      "meaning_ja": "削減する",
+      "difficulty": "basic",
+      "example": "We need to cut expenses."
+    },
+    {
+      "word": "deal",
+      "category": "Business",
+      "meaning_ja": "扱う、取引する",
+      "difficulty": "basic",
+      "example": "We deal with international clients."
+    },
+    {
+      "word": "decide",
+      "category": "General",
+      "meaning_ja": "決める",
+      "difficulty": "basic",
+      "example": "Decide on a date."
+    },
+    {
+      "word": "decrease",
+      "category": "General",
+      "meaning_ja": "減少する",
+      "difficulty": "basic",
+      "example": "Sales decreased slightly."
+    },
+    {
+      "word": "deduct",
+      "category": "Finance",
+      "meaning_ja": "差し引く",
+      "difficulty": "intermediate",
+      "example": "Tax is deducted at source."
+    },
+    {
+      "word": "defend",
+      "category": "Legal",
+      "meaning_ja": "弁護する、守る",
+      "difficulty": "basic",
+      "example": "They hired a lawyer to defend them."
+    },
+    {
+      "word": "define",
+      "category": "General",
+      "meaning_ja": "定義する",
+      "difficulty": "intermediate",
+      "example": "Define the scope of work."
+    },
+    {
+      "word": "delay",
+      "category": "General",
+      "meaning_ja": "遅らせる",
+      "difficulty": "basic",
+      "example": "Do not delay the shipment."
+    },
+    {
+      "word": "deliver",
+      "category": "Logistics",
+      "meaning_ja": "配達する",
+      "difficulty": "basic",
+      "example": "We deliver worldwide."
+    },
+    {
+      "word": "demand",
+      "category": "Business",
+      "meaning_ja": "要求する、需要",
+      "difficulty": "basic",
+      "example": "Demand is high."
+    },
+    {
+      "word": "demonstrate",
+      "category": "General",
+      "meaning_ja": "実演する、証明する",
+      "difficulty": "intermediate",
+      "example": "Demonstrate how it works."
+    },
+    {
+      "word": "deny",
+      "category": "Legal",
+      "meaning_ja": "否定する、拒む",
+      "difficulty": "basic",
+      "example": "He denied the allegations."
+    },
+    {
+      "word": "depend",
+      "category": "General",
+      "meaning_ja": "依存する",
+      "difficulty": "basic",
+      "example": "It depends on the budget."
+    },
+    {
+      "word": "describe",
+      "category": "General",
+      "meaning_ja": "描写する",
+      "difficulty": "basic",
+      "example": "Describe the problem."
+    },
+    {
+      "word": "deserve",
+      "category": "General",
+      "meaning_ja": "値する",
+      "difficulty": "basic",
+      "example": "You deserve a raise."
+    },
+    {
+      "word": "design",
+      "category": "General",
+      "meaning_ja": "設計する",
+      "difficulty": "basic",
+      "example": "Who designed this logo?"
+    },
+    {
+      "word": "desire",
+      "category": "General",
+      "meaning_ja": "望む",
+      "difficulty": "intermediate",
+      "example": "We desire a quick resolution."
+    },
+    {
+      "word": "destroy",
+      "category": "General",
+      "meaning_ja": "破壊する",
+      "difficulty": "basic",
+      "example": "The fire destroyed the warehouse."
+    },
+    {
+      "word": "detect",
+      "category": "General",
+      "meaning_ja": "探知する",
+      "difficulty": "intermediate",
+      "example": "The software detects viruses."
+    },
+    {
+      "word": "determine",
+      "category": "General",
+      "meaning_ja": "決定する、特定する",
+      "difficulty": "intermediate",
+      "example": "Determine the cause of the error."
+    },
+    {
+      "word": "develop",
+      "category": "Business",
+      "meaning_ja": "開発する",
+      "difficulty": "basic",
+      "example": "We are developing a new app."
+    },
+    {
+      "word": "devise",
+      "category": "General",
+      "meaning_ja": "考案する",
+      "difficulty": "advanced",
+      "example": "Devise a marketing plan."
+    },
+    {
+      "word": "devote",
+      "category": "General",
+      "meaning_ja": "捧げる",
+      "difficulty": "intermediate",
+      "example": "He devotes his time to work."
+    },
+    {
+      "word": "differ",
+      "category": "General",
+      "meaning_ja": "異なる",
+      "difficulty": "basic",
+      "example": "Opinions differ on this."
+    },
+    {
+      "word": "direct",
+      "category": "Management",
+      "meaning_ja": "指揮する、向ける",
+      "difficulty": "basic",
+      "example": "Direct your questions to HR."
+    },
+    {
+      "word": "disagree",
+      "category": "General",
+      "meaning_ja": "反対する",
+      "difficulty": "basic",
+      "example": "I disagree with you."
+    },
+    {
+      "word": "disappear",
+      "category": "General",
+      "meaning_ja": "消える",
+      "difficulty": "basic",
+      "example": "The problem disappeared."
+    },
+    {
+      "word": "disappoint",
+      "category": "General",
+      "meaning_ja": "失望させる",
+      "difficulty": "basic",
+      "example": "The results were disappointing."
+    },
+    {
+      "word": "discharge",
+      "category": "Legal",
+      "meaning_ja": "解任する、放出する",
+      "difficulty": "advanced",
+      "example": "He was discharged from duty."
+    },
+    {
+      "word": "disclose",
+      "category": "Legal",
+      "meaning_ja": "開示する",
+      "difficulty": "intermediate",
+      "example": "You must disclose all assets."
+    },
+    {
+      "word": "discount",
+      "category": "Sales",
+      "meaning_ja": "割り引く",
+      "difficulty": "basic",
+      "example": "We cannot discount it further."
+    },
+    {
+      "word": "discover",
+      "category": "General",
+      "meaning_ja": "発見する",
+      "difficulty": "basic",
+      "example": "We discovered a new market."
+    },
+    {
+      "word": "display",
+      "category": "General",
+      "meaning_ja": "展示する",
+      "difficulty": "basic",
+      "example": "Products are displayed here."
+    },
+    {
+      "word": "dispose",
+      "category": "General",
+      "meaning_ja": "処分する",
+      "difficulty": "intermediate",
+      "example": "Dispose of confidential documents properly."
+    },
+    {
+      "word": "distinguish",
+      "category": "General",
+      "meaning_ja": "区別する",
+      "difficulty": "intermediate",
+      "example": "Distinguish between fact and opinion."
+    },
+    {
+      "word": "distribute",
+      "category": "Logistics",
+      "meaning_ja": "分配する",
+      "difficulty": "intermediate",
+      "example": "Distribute the brochures."
+    },
+    {
+      "word": "disturb",
+      "category": "General",
+      "meaning_ja": "邪魔する",
+      "difficulty": "basic",
+      "example": "Do not disturb."
+    },
+    {
+      "word": "divide",
+      "category": "General",
+      "meaning_ja": "分割する",
+      "difficulty": "basic",
+      "example": "Divide the work equally."
+    },
+    {
+      "word": "dominate",
+      "category": "Business",
+      "meaning_ja": "支配する",
+      "difficulty": "intermediate",
+      "example": "We dominate the market."
+    },
+    {
+      "word": "doubt",
+      "category": "General",
+      "meaning_ja": "疑う",
+      "difficulty": "basic",
+      "example": "I doubt it will work."
+    },
+    {
+      "word": "draft",
+      "category": "General",
+      "meaning_ja": "草案を書く",
+      "difficulty": "intermediate",
+      "example": "Draft a letter."
+    },
+    {
+      "word": "drag",
+      "category": "IT",
+      "meaning_ja": "ドラッグする",
+      "difficulty": "basic",
+      "example": "Drag and drop the file."
+    },
+    {
+      "word": "draw",
+      "category": "General",
+      "meaning_ja": "描く、引き出す",
+      "difficulty": "basic",
+      "example": "Draw a conclusion."
+    },
+    {
+      "word": "drop",
+      "category": "General",
+      "meaning_ja": "落ちる、やめる",
+      "difficulty": "basic",
+      "example": "Sales dropped last month."
+    },
+    {
+      "word": "earn",
+      "category": "Finance",
+      "meaning_ja": "稼ぐ",
+      "difficulty": "basic",
+      "example": "He earns a good salary."
+    },
+    {
+      "word": "edit",
+      "category": "General",
+      "meaning_ja": "編集する",
+      "difficulty": "basic",
+      "example": "Edit the document."
+    },
+    {
+      "word": "effect",
+      "category": "General",
+      "meaning_ja": "もたらす",
+      "difficulty": "advanced",
+      "example": "The new law effected change."
+    },
+    {
+      "word": "elect",
+      "category": "General",
+      "meaning_ja": "選出する",
+      "difficulty": "intermediate",
+      "example": "He was elected chairman."
+    },
+    {
+      "word": "eliminate",
+      "category": "General",
+      "meaning_ja": "排除する",
+      "difficulty": "intermediate",
+      "example": "Eliminate waste."
+    },
+    {
+      "word": "employ",
+      "category": "HR",
+      "meaning_ja": "雇う",
+      "difficulty": "basic",
+      "example": "We employ 50 people."
+    },
+    {
+      "word": "enable",
+      "category": "General",
+      "meaning_ja": "可能にする",
+      "difficulty": "intermediate",
+      "example": "Technology enables remote work."
+    },
+    {
+      "word": "enclose",
+      "category": "General",
+      "meaning_ja": "同封する",
+      "difficulty": "intermediate",
+      "example": "I enclosed my resume."
+    },
+    {
+      "word": "encourage",
+      "category": "HR",
+      "meaning_ja": "奨励する",
+      "difficulty": "basic",
+      "example": "We encourage creativity."
+    },
+    {
+      "word": "end",
+      "category": "General",
+      "meaning_ja": "終わる",
+      "difficulty": "basic",
+      "example": "The fiscal year ends soon."
+    },
+    {
+      "word": "endorse",
+      "category": "Marketing",
+      "meaning_ja": "承認する、推奨する",
+      "difficulty": "intermediate",
+      "example": "The celebrity endorsed the brand."
+    },
+    {
+      "word": "enforce",
+      "category": "Legal",
+      "meaning_ja": "施行する",
+      "difficulty": "intermediate",
+      "example": "Enforce the rules."
+    },
+    {
+      "word": "engage",
+      "category": "General",
+      "meaning_ja": "従事する、引きつける",
+      "difficulty": "intermediate",
+      "example": "Engage the audience."
+    },
+    {
+      "word": "enhance",
+      "category": "General",
+      "meaning_ja": "高める",
+      "difficulty": "intermediate",
+      "example": "Enhance the user experience."
+    },
+    {
+      "word": "enjoy",
+      "category": "General",
+      "meaning_ja": "享受する、楽しむ",
+      "difficulty": "basic",
+      "example": "Enjoy the benefits."
+    },
+    {
+      "word": "ensure",
+      "category": "General",
+      "meaning_ja": "確実にする",
+      "difficulty": "intermediate",
+      "example": "Ensure compliance."
+    },
+    {
+      "word": "enter",
+      "category": "General",
+      "meaning_ja": "入る、入力する",
+      "difficulty": "basic",
+      "example": "Enter your password."
+    },
+    {
+      "word": "entertain",
+      "category": "Business",
+      "meaning_ja": "接待する、楽しませる",
+      "difficulty": "basic",
+      "example": "We entertain clients often."
+    },
+    {
+      "word": "entitle",
+      "category": "Legal",
+      "meaning_ja": "資格を与える",
+      "difficulty": "intermediate",
+      "example": "You are entitled to a refund."
+    },
+    {
+      "word": "equip",
+      "category": "General",
+      "meaning_ja": "装備させる",
+      "difficulty": "intermediate",
+      "example": "The office is fully equipped."
+    },
+    {
+      "word": "establish",
+      "category": "Business",
+      "meaning_ja": "設立する",
+      "difficulty": "intermediate",
+      "example": "The company was established in 1990."
+    },
+    {
+      "word": "exceed",
+      "category": "General",
+      "meaning_ja": "超える",
+      "difficulty": "intermediate",
+      "example": "Sales exceeded expectations."
+    },
+    {
+      "word": "exchange",
+      "category": "General",
+      "meaning_ja": "交換する",
+      "difficulty": "basic",
+      "example": "Exchange business cards."
+    },
+    {
+      "word": "exclude",
+      "category": "General",
+      "meaning_ja": "除外する",
+      "difficulty": "intermediate",
+      "example": "Tax is excluded."
+    },
+    {
+      "word": "excuse",
+      "category": "General",
+      "meaning_ja": "免除する、許す",
+      "difficulty": "basic",
+      "example": "Excuse me for being late."
+    },
+    {
+      "word": "execute",
+      "category": "General",
+      "meaning_ja": "実行する",
+      "difficulty": "intermediate",
+      "example": "Execute the plan."
+    },
+    {
+      "word": "exercise",
+      "category": "General",
+      "meaning_ja": "行使する、運動する",
+      "difficulty": "intermediate",
+      "example": "Exercise your rights."
+    },
+    {
+      "word": "exhibit",
+      "category": "Marketing",
+      "meaning_ja": "展示する",
+      "difficulty": "intermediate",
+      "example": "We exhibited at the trade show."
+    },
+    {
+      "word": "exist",
+      "category": "General",
+      "meaning_ja": "存在する",
+      "difficulty": "basic",
+      "example": "The problem still exists."
+    },
+    {
+      "word": "expand",
+      "category": "Business",
+      "meaning_ja": "拡大する",
+      "difficulty": "basic",
+      "example": "We want to expand into Asia."
+    },
+    {
+      "word": "expect",
+      "category": "General",
+      "meaning_ja": "期待する",
+      "difficulty": "basic",
+      "example": "We expect growth."
+    },
+    {
+      "word": "experience",
+      "category": "General",
+      "meaning_ja": "経験する",
+      "difficulty": "basic",
+      "example": "We are experiencing technical difficulties."
+    },
+    {
+      "word": "explain",
+      "category": "General",
+      "meaning_ja": "説明する",
+      "difficulty": "basic",
+      "example": "Explain the reason."
+    },
+    {
+      "word": "explore",
+      "category": "General",
+      "meaning_ja": "探る",
+      "difficulty": "intermediate",
+      "example": "Explore new opportunities."
+    },
+    {
+      "word": "export",
+      "category": "Business",
+      "meaning_ja": "輸出する",
+      "difficulty": "basic",
+      "example": "We export to Europe."
+    },
+    {
+      "word": "expose",
+      "category": "General",
+      "meaning_ja": "さらす、暴露する",
+      "difficulty": "intermediate",
+      "example": "Don't expose data to risk."
+    },
+    {
+      "word": "express",
+      "category": "General",
+      "meaning_ja": "表現する",
+      "difficulty": "basic",
+      "example": "Express your opinion."
+    },
+    {
+      "word": "extend",
+      "category": "General",
+      "meaning_ja": "延長する",
+      "difficulty": "basic",
+      "example": "Extend the deadline."
+    },
+    {
+      "word": "face",
+      "category": "General",
+      "meaning_ja": "直面する",
+      "difficulty": "basic",
+      "example": "We face many challenges."
+    },
+    {
+      "word": "fail",
+      "category": "General",
+      "meaning_ja": "失敗する",
+      "difficulty": "basic",
+      "example": "The project failed."
+    },
+    {
+      "word": "fall",
+      "category": "General",
+      "meaning_ja": "下落する",
+      "difficulty": "basic",
+      "example": "Prices fell."
+    },
+    {
+      "word": "favor",
+      "category": "General",
+      "meaning_ja": "好む、支持する",
+      "difficulty": "intermediate",
+      "example": "We favor this option."
+    },
+    {
+      "word": "fear",
+      "category": "General",
+      "meaning_ja": "恐れる",
+      "difficulty": "basic",
+      "example": "Investors fear inflation."
+    },
+    {
+      "word": "feature",
+      "category": "General",
+      "meaning_ja": "特徴とする",
+      "difficulty": "intermediate",
+      "example": "The app features a new design."
+    },
+    {
+      "word": "feed",
+      "category": "General",
+      "meaning_ja": "供給する",
+      "difficulty": "basic",
+      "example": "Feed data into the system."
+    },
+    {
+      "word": "feel",
+      "category": "General",
+      "meaning_ja": "感じる",
+      "difficulty": "basic",
+      "example": "I feel confident."
+    },
+    {
+      "word": "file",
+      "category": "Legal",
+      "meaning_ja": "提出する、保管する",
+      "difficulty": "basic",
+      "example": "File a complaint."
+    },
+    {
+      "word": "fill",
+      "category": "General",
+      "meaning_ja": "満たす、記入する",
+      "difficulty": "basic",
+      "example": "Fill the vacancy."
+    },
+    {
+      "word": "finance",
+      "category": "Finance",
+      "meaning_ja": "融資する",
+      "difficulty": "intermediate",
+      "example": "The bank financed the deal."
+    },
+    {
+      "word": "find",
+      "category": "General",
+      "meaning_ja": "見つける",
+      "difficulty": "basic",
+      "example": "Find a solution."
+    },
+    {
+      "word": "finish",
+      "category": "General",
+      "meaning_ja": "終える",
+      "difficulty": "basic",
+      "example": "Finish the report."
+    },
+    {
+      "word": "fit",
+      "category": "General",
+      "meaning_ja": "適合する",
+      "difficulty": "basic",
+      "example": "He fits the role perfectly."
+    },
+    {
+      "word": "fix",
+      "category": "General",
+      "meaning_ja": "修理する、固定する",
+      "difficulty": "basic",
+      "example": "Fix the bug."
+    },
+    {
+      "word": "focus",
+      "category": "General",
+      "meaning_ja": "集中する",
+      "difficulty": "basic",
+      "example": "Focus on the customer."
+    },
+    {
+      "word": "follow",
+      "category": "General",
+      "meaning_ja": "従う",
+      "difficulty": "basic",
+      "example": "Follow the procedure."
+    },
+    {
+      "word": "force",
+      "category": "General",
+      "meaning_ja": "強制する",
+      "difficulty": "intermediate",
+      "example": "Don't force the decision."
+    },
+    {
+      "word": "forget",
+      "category": "General",
+      "meaning_ja": "忘れる",
+      "difficulty": "basic",
+      "example": "Don't forget the meeting."
+    },
+    {
+      "word": "forgive",
+      "category": "General",
+      "meaning_ja": "許す",
+      "difficulty": "basic",
+      "example": "Forgive the error."
+    },
+    {
+      "word": "form",
+      "category": "General",
+      "meaning_ja": "形成する",
+      "difficulty": "basic",
+      "example": "Form a committee."
+    },
+    {
+      "word": "formulate",
+      "category": "General",
+      "meaning_ja": "策定する",
+      "difficulty": "advanced",
+      "example": "Formulate a strategy."
+    },
+    {
+      "word": "foster",
+      "category": "General",
+      "meaning_ja": "育成する",
+      "difficulty": "advanced",
+      "example": "Foster innovation."
+    },
+    {
+      "word": "found",
+      "category": "Business",
+      "meaning_ja": "創設する",
+      "difficulty": "intermediate",
+      "example": "The company was founded in 1920."
+    },
+    {
+      "word": "fund",
+      "category": "Finance",
+      "meaning_ja": "資金を提供する",
+      "difficulty": "basic",
+      "example": "The project is funded by the government."
+    }
+  ]
+}

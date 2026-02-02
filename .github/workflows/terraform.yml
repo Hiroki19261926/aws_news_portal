@@ -4,17 +4,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'terraform/**'
-      - 'lambda/**'
-      - 'frontend/**'
   pull_request:
     branches:
       - main
-    paths:
-      - 'terraform/**'
-      - 'lambda/**'
-      - 'frontend/**'
 
 # -----------------------------------------------------------------------------
 # 環境変数

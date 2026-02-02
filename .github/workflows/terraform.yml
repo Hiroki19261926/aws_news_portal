@@ -22,13 +22,52 @@ env:
   AWS_REGION: "ap-northeast-1"
 
 jobs:
-  terraform:
-    name: Terraform
+  # ===========================================================================
+  # Job 1: チェックアウトと共通セットアップ
+  # ===========================================================================
+  checkout-and-setup:
+    name: Checkout & Setup
     runs-on: ubuntu-latest
+    outputs:
+      cache-key: ${{ steps.cache-key.outputs.key }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate cache key
+        id: cache-key
+        run: echo "key=${{ github.sha }}" >> $GITHUB_OUTPUT
+
+  # ===========================================================================
+  # Job 2: AWS認証確認
+  # ===========================================================================
+  aws-auth:
+    name: AWS Authentication
+    runs-on: ubuntu-latest
+    needs: checkout-and-setup
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Verify AWS credentials
+        run: |
+          aws sts get-caller-identity
+          echo "✅ AWS認証成功"
+
+  # ===========================================================================
+  # Job 3: Terraform検証（Format, Init, Validate）
+  # ===========================================================================
+  terraform-validate:
+    name: Terraform Validate
+    runs-on: ubuntu-latest
+    needs: [checkout-and-setup, aws-auth]
     defaults:
       run:
         working-directory: terraform
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,10 +77,6 @@ jobs:
         with:
           terraform_version: ${{ env.TF_VERSION }}
 
-      # -----------------------------------------------------------------------------
-      # AWS認証: IAMユーザーのアクセスキーを使用
-      # GitHub SecretsにAWS_ACCESS_KEY_IDとAWS_SECRET_ACCESS_KEYを設定すること
-      # -----------------------------------------------------------------------------
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -49,56 +84,140 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      # -----------------------------------------------------------------------------
-      # Python環境セットアップ（Lambda依存関係インストール用）
-      # -----------------------------------------------------------------------------
+      - name: Terraform Format Check
+        run: |
+          terraform fmt -check -recursive
+          echo "✅ フォーマットチェック完了"
+
+      - name: Terraform Init
+        run: |
+          terraform init \
+            -backend-config="bucket=${{ secrets.TF_BACKEND_BUCKET }}" \
+            -backend-config="dynamodb_table=${{ secrets.TF_BACKEND_DYNAMO_TABLE }}"
+          echo "✅ Terraform初期化完了"
+
+      - name: Terraform Validate
+        run: |
+          terraform validate
+          echo "✅ 構文検証完了"
+
+  # ===========================================================================
+  # Job 4: Lambda依存関係インストール
+  # ===========================================================================
+  lambda-dependencies:
+    name: Lambda Dependencies
+    runs-on: ubuntu-latest
+    needs: checkout-and-setup
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # -----------------------------------------------------------------------------
-      # Lambda依存関係インストール
-      # デプロイ前にrequirements.txtの依存関係をLambdaフォルダにインストール
-      # -----------------------------------------------------------------------------
       - name: Install Lambda Dependencies
         run: |
-          pip install -r ../lambda/api_aggregator/requirements.txt -t ../lambda/api_aggregator/
+          pip install -r lambda/api_aggregator/requirements.txt -t lambda/api_aggregator/
+          echo "✅ Lambda依存関係インストール完了"
 
-      - name: Terraform Format Check
-        run: terraform fmt -check -recursive
+      - name: Cache Lambda with dependencies
+        uses: actions/cache/save@v4
+        with:
+          path: lambda/
+          key: lambda-${{ github.sha }}
 
-      # -----------------------------------------------------------------------------
-      # Terraform Init
-      # バックエンド設定はGitHub Secretsで管理
-      # -----------------------------------------------------------------------------
+  # ===========================================================================
+  # Job 5: Terraform Plan
+  # ===========================================================================
+  terraform-plan:
+    name: Terraform Plan
+    runs-on: ubuntu-latest
+    needs: [terraform-validate, lambda-dependencies]
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    defaults:
+      run:
+        working-directory: terraform
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore Lambda cache
+        uses: actions/cache/restore@v4
+        with:
+          path: lambda/
+          key: lambda-${{ github.sha }}
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
       - name: Terraform Init
         run: |
           terraform init \
             -backend-config="bucket=${{ secrets.TF_BACKEND_BUCKET }}" \
             -backend-config="dynamodb_table=${{ secrets.TF_BACKEND_DYNAMO_TABLE }}"
 
-      - name: Terraform Validate
-        run: terraform validate
-
-      # -----------------------------------------------------------------------------
-      # Terraform Plan
-      # PRとpush両方で実行するように変更（Minecraftと統一）
-      # -----------------------------------------------------------------------------
       - name: Terraform Plan
-        if: github.event_name == 'pull_request' || github.event_name == 'push'
         env:
           TF_VAR_steam_api_key: ${{ secrets.STEAM_API_KEY }}
           TF_VAR_wordnik_api_key: ${{ secrets.WORDNIK_API_KEY }}
-        run: terraform plan -no-color
+        run: |
+          terraform plan -no-color
+          echo "✅ Terraform Plan完了"
 
-      # -----------------------------------------------------------------------------
-      # Terraform Apply
-      # mainブランチへのpush時のみ実行
-      # -----------------------------------------------------------------------------
+  # ===========================================================================
+  # Job 6: Terraform Apply（mainブランチへのpush時のみ）
+  # ===========================================================================
+  terraform-apply:
+    name: Terraform Apply
+    runs-on: ubuntu-latest
+    needs: terraform-plan
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    defaults:
+      run:
+        working-directory: terraform
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore Lambda cache
+        uses: actions/cache/restore@v4
+        with:
+          path: lambda/
+          key: lambda-${{ github.sha }}
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Terraform Init
+        run: |
+          terraform init \
+            -backend-config="bucket=${{ secrets.TF_BACKEND_BUCKET }}" \
+            -backend-config="dynamodb_table=${{ secrets.TF_BACKEND_DYNAMO_TABLE }}"
+
       - name: Terraform Apply
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           TF_VAR_steam_api_key: ${{ secrets.STEAM_API_KEY }}
           TF_VAR_wordnik_api_key: ${{ secrets.WORDNIK_API_KEY }}
-        run: terraform apply -auto-approve
+        run: |
+          terraform apply -auto-approve
+          echo "✅ Terraform Apply完了"

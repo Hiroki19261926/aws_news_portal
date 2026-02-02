@@ -43,7 +43,25 @@ const MOCK_DATA = {
             { date: "2024-05-17", max_temp: 25.0, min_temp: 17.0, weather_code: 0, precip_prob: 0 }, // Clear
             { date: "2024-05-18", max_temp: 26.0, min_temp: 18.0, weather_code: 61, precip_prob: 60 }, // Rain
             { date: "2024-05-19", max_temp: 23.0, min_temp: 16.0, weather_code: 1, precip_prob: 10 },
-        ]
+        ],
+        hourly: [
+            { time: "2024-05-15T09:00", temp: 18.0, precip_prob: 0, precip_amount: 0 },
+            { time: "2024-05-15T10:00", temp: 19.5, precip_prob: 0, precip_amount: 0 },
+            { time: "2024-05-15T11:00", temp: 21.0, precip_prob: 10, precip_amount: 0 },
+            { time: "2024-05-15T12:00", temp: 22.5, precip_prob: 20, precip_amount: 0 },
+            { time: "2024-05-15T13:00", temp: 23.0, precip_prob: 10, precip_amount: 0 },
+            { time: "2024-05-15T14:00", temp: 23.5, precip_prob: 0, precip_amount: 0 },
+            { time: "2024-05-15T15:00", temp: 23.0, precip_prob: 0, precip_amount: 0 },
+            { time: "2024-05-15T16:00", temp: 22.0, precip_prob: 0, precip_amount: 0 },
+        ],
+        pollen: {
+            alder_pollen: 10.5,
+            birch_pollen: 5.0,
+            grass_pollen: 0.0,
+            mugwort_pollen: 0.0,
+            olive_pollen: 0.0,
+            ragweed_pollen: 0.0
+        }
     },
     steam: {
         sales: [

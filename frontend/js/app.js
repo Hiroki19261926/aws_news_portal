@@ -3,6 +3,7 @@ import { settings } from './settings.js';
 import { initWeather } from './weather.js';
 import { initSteamCarousel, renderSteamLists } from './carousel.js';
 import { initEnglish } from './english.js';
+import { prefectures } from './prefectures.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     console.log("News Hub Initializing...");
@@ -167,11 +168,48 @@ function initSettingsModal() {
     const btn = document.getElementById('settings-btn');
     const closeBtn = document.getElementById('close-settings-btn');
     const saveBtn = document.getElementById('save-settings-btn');
+    const prefSelect = document.getElementById('settings-prefecture');
+    const latInput = document.getElementById('settings-lat');
+    const lonInput = document.getElementById('settings-lon');
+
+    // Populate Prefectures
+    prefectures.forEach(pref => {
+        const option = document.createElement('option');
+        option.value = pref.name;
+        option.textContent = pref.name;
+        option.dataset.lat = pref.lat;
+        option.dataset.lon = pref.lon;
+        prefSelect.appendChild(option);
+    });
+
+    prefSelect.addEventListener('change', (e) => {
+        const selectedOption = e.target.options[e.target.selectedIndex];
+        if (selectedOption.value && selectedOption.value !== 'custom') {
+            latInput.value = selectedOption.dataset.lat;
+            lonInput.value = selectedOption.dataset.lon;
+        } else if (selectedOption.value === 'custom') {
+            latInput.value = '';
+            lonInput.value = '';
+        }
+    });
 
     btn.addEventListener('click', () => {
         const current = settings.get();
-        document.getElementById('settings-lat').value = current.location.lat;
-        document.getElementById('settings-lon').value = current.location.lon;
+        latInput.value = current.location.lat;
+        lonInput.value = current.location.lon;
+
+        // Try to match prefecture
+        const matched = prefectures.find(p =>
+            Math.abs(p.lat - current.location.lat) < 0.001 &&
+            Math.abs(p.lon - current.location.lon) < 0.001
+        );
+
+        if (matched) {
+            prefSelect.value = matched.name;
+        } else {
+            prefSelect.value = 'custom';
+        }
+
         modal.classList.remove('hidden');
     });
 
@@ -179,11 +217,14 @@ function initSettingsModal() {
     closeBtn.addEventListener('click', close);
 
     saveBtn.addEventListener('click', () => {
-        const lat = document.getElementById('settings-lat').value;
-        const lon = document.getElementById('settings-lon').value;
+        const lat = parseFloat(latInput.value);
+        const lon = parseFloat(lonInput.value);
+        const selectedPref = prefSelect.value;
+        const name = (selectedPref && selectedPref !== 'custom') ? selectedPref : "Custom";
+
         if (lat && lon) {
-            settings.updateLocation("Custom", parseFloat(lat), parseFloat(lon));
-            initWeather({lat, lon}); // Reload weather
+            settings.updateLocation(name, lat, lon);
+            initWeather({name, lat, lon}); // Reload weather
         }
         close();
     });

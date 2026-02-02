@@ -52,6 +52,15 @@ function renderQuiz(data) {
     if (!data) return;
 
     document.getElementById('quiz-question').textContent = data.question;
+
+    const exampleEl = document.getElementById('quiz-example');
+    if (data.example) {
+        exampleEl.textContent = `"${data.example}"`;
+        exampleEl.classList.remove('hidden');
+    } else {
+        exampleEl.classList.add('hidden');
+    }
+
     const container = document.getElementById('quiz-options');
     container.innerHTML = '';
 

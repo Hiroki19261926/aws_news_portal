@@ -33,6 +33,9 @@ function renderWeather(data) {
     if (daily.length > 0) {
         document.getElementById('temp-high').textContent = Math.round(daily[0].max_temp);
         document.getElementById('temp-low').textContent = Math.round(daily[0].min_temp);
+        
+        // 服装提案を表示
+        renderClothingSuggestion(daily[0].max_temp, daily[0].min_temp, current.weathercode);
     }
 
     // Weekly Forecast (5 days including today)
@@ -61,6 +64,120 @@ function renderWeather(data) {
 
     // Hourly Chart
     renderChart(hourly);
+}
+
+// -----------------------------------------------------------------------------
+// 服装提案機能
+// -----------------------------------------------------------------------------
+function renderClothingSuggestion(maxTemp, minTemp, weatherCode) {
+    const container = document.getElementById('clothing-suggestion');
+    if (!container) return;
+
+    // 日中の体感温度を計算（最高気温をベースに、天候による補正）
+    let feelsLike = maxTemp;
+    
+    // 雨・雪の場合は体感温度を下げる
+    if (weatherCode >= 51 && weatherCode <= 67) feelsLike -= 2; // 雨
+    if (weatherCode >= 71 && weatherCode <= 77) feelsLike -= 3; // 雪
+    if (weatherCode >= 80 && weatherCode <= 82) feelsLike -= 2; // にわか雨
+
+    const suggestion = getClothingSuggestion(feelsLike, minTemp, weatherCode);
+    
+    container.innerHTML = `
+        <div class="flex items-center space-x-3">
+            <div class="text-3xl">${suggestion.icon}</div>
+            <div>
+                <div class="font-bold text-sm">${suggestion.title}</div>
+                <div class="text-xs opacity-90">${suggestion.description}</div>
+            </div>
+        </div>
+        <div class="mt-2 flex flex-wrap gap-1">
+            ${suggestion.items.map(item => `<span class="bg-white/30 px-2 py-0.5 rounded text-xs">${item}</span>`).join('')}
+        </div>
+    `;
+    
+    container.classList.remove('hidden');
+}
+
+function getClothingSuggestion(maxTemp, minTemp, weatherCode) {
+    // 雨具の判定
+    const needsUmbrella = (weatherCode >= 51 && weatherCode <= 67) || 
+                          (weatherCode >= 80 && weatherCode <= 82) ||
+                          weatherCode >= 95;
+    const needsRainGear = weatherCode >= 61 && weatherCode <= 67;
+    
+    // 寒暖差が大きい場合の警告
+    const tempDiff = maxTemp - minTemp;
+    const hasLargeTempDiff = tempDiff >= 10;
+
+    let suggestion = {
+        icon: '',
+        title: '',
+        description: '',
+        items: []
+    };
+
+    // 気温による服装判定（日中の最高気温ベース）
+    if (maxTemp >= 30) {
+        // 真夏日
+        suggestion.icon = '🩳';
+        suggestion.title = '真夏の服装';
+        suggestion.description = '熱中症に注意！水分補給をこまめに';
+        suggestion.items = ['Tシャツ', '半ズボン/スカート', 'サンダルOK', '帽子', '日焼け止め'];
+    } else if (maxTemp >= 25) {
+        // 夏日
+        suggestion.icon = '👕';
+        suggestion.title = '夏の軽装';
+        suggestion.description = '薄着で快適に過ごせます';
+        suggestion.items = ['Tシャツ', '薄手のシャツ', '半袖OK'];
+    } else if (maxTemp >= 20) {
+        // 過ごしやすい
+        suggestion.icon = '👔';
+        suggestion.title = '快適な服装';
+        suggestion.description = '過ごしやすい気温です';
+        suggestion.items = ['長袖シャツ', '薄手のカーディガン'];
+    } else if (maxTemp >= 15) {
+        // やや肌寒い
+        suggestion.icon = '🧥';
+        suggestion.title = '羽織りものを';
+        suggestion.description = '朝晩は冷えるので羽織りものを';
+        suggestion.items = ['長袖', 'カーディガン', '薄手のジャケット'];
+    } else if (maxTemp >= 10) {
+        // 肌寒い
+        suggestion.icon = '🧥';
+        suggestion.title = 'アウター必須';
+        suggestion.description = 'しっかりとした上着が必要です';
+        suggestion.items = ['セーター', 'ジャケット', '厚手のアウター'];
+    } else if (maxTemp >= 5) {
+        // 寒い
+        suggestion.icon = '🧣';
+        suggestion.title = '冬の防寒を';
+        suggestion.description = 'コートとマフラーで防寒を';
+        suggestion.items = ['厚手コート', 'マフラー', '手袋', 'ニット'];
+    } else {
+        // 極寒
+        suggestion.icon = '🥶';
+        suggestion.title = '厳重な防寒を';
+        suggestion.description = '凍えるような寒さです！完全防備で';
+        suggestion.items = ['ダウンコート', 'マフラー必須', '手袋必須', 'ニット帽', 'ヒートテック'];
+    }
+
+    // 雨具の追加
+    if (needsUmbrella) {
+        suggestion.items.push('☔ 傘');
+    }
+    if (needsRainGear) {
+        suggestion.items.push('🌧️ レインコート');
+        suggestion.description += '（雨対策も忘れずに）';
+    }
+
+    // 寒暖差が大きい場合
+    if (hasLargeTempDiff) {
+        suggestion.items.push('🌡️ 脱ぎ着しやすい服');
+        suggestion.description += ` 寒暖差${Math.round(tempDiff)}°Cあり`;
+    }
+
+    return suggestion;
 }
 
 function renderPollen(pollenData) {

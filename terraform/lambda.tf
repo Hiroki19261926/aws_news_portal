@@ -3,33 +3,13 @@
 # =============================================================================
 
 # -----------------------------------------------------------------------------
-# Lambda用ダミーZIPファイル
-# 実際のコードは後でデプロイする
+# Lambda用ソースコードZIPファイル
 # -----------------------------------------------------------------------------
-data "archive_file" "lambda_dummy" {
+data "archive_file" "api_package" {
   type        = "zip"
-  output_path = "${path.module}/lambda_dummy.zip"
-
-  source {
-    content  = <<-EOF
-      import json
-
-      def handler(event, context):
-          """
-          ダミーハンドラー
-          実際のコードは後でデプロイする
-          """
-          return {
-              'statusCode': 200,
-              'headers': {
-                  'Content-Type': 'application/json',
-                  'Access-Control-Allow-Origin': '*'
-              },
-              'body': json.dumps({'message': 'Hello from News Hub API'})
-          }
-    EOF
-    filename = "index.py"
-  }
+  output_path = "${path.module}/api_package.zip"
+  source_dir  = "${path.module}/../lambda/api_aggregator"
+  excludes    = ["__pycache__", "*.pyc"]
 }
 
 # -----------------------------------------------------------------------------
@@ -43,8 +23,8 @@ resource "aws_lambda_function" "api" {
   memory_size   = 256
   timeout       = 30
 
-  filename         = data.archive_file.lambda_dummy.output_path
-  source_code_hash = data.archive_file.lambda_dummy.output_base64sha256
+  filename         = data.archive_file.api_package.output_path
+  source_code_hash = data.archive_file.api_package.output_base64sha256
 
   environment {
     variables = {

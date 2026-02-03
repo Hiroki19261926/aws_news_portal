@@ -2,6 +2,7 @@ import feedparser
 from concurrent.futures import ThreadPoolExecutor
 import time
 from datetime import datetime
+import re
 
 # RSS Feed URLs
 FEED_URLS = {
@@ -73,6 +74,18 @@ def parse_feed(url):
             if not image_url and hasattr(entry, 'media_thumbnail'):
                 if len(entry.media_thumbnail) > 0:
                     image_url = entry.media_thumbnail[0].get('url')
+
+            # 説明文(summary/description/content)から画像を抽出
+            if not image_url:
+                content_to_search = getattr(entry, 'summary', '') or getattr(entry, 'description', '')
+                if hasattr(entry, 'content'):
+                    for c in entry.content:
+                        content_to_search += c.get('value', '')
+
+                # <img src="..."> を検索
+                img_match = re.search(r'<img[^>]+src=["\'](.*?)["\']', content_to_search, re.IGNORECASE)
+                if img_match:
+                    image_url = img_match.group(1)
 
             entries.append({
                 'title': entry.title,

@@ -235,7 +235,7 @@ function renderChart(hourlyData) {
     const data = hourlyData.slice(0, 24);
     const labels = data.map(d => {
         const date = new Date(d.time);
-        return `${date.getHours()}:00`;
+        return `${date.getHours()}時`;
     });
     const temps = data.map(d => d.temp);
     const probs = data.map(d => d.precip_prob);
@@ -298,7 +298,13 @@ function renderChart(hourlyData) {
                     display: true,
                     position: 'left',
                     ticks: { color: 'white', font: { size: 10 } },
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    title: {
+                        display: true,
+                        text: '気温 (°C)',
+                        color: 'rgba(255, 255, 255, 0.8)',
+                        font: { size: 10 }
+                    }
                 },
                 y1: {
                     type: 'linear',

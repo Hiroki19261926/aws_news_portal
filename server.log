@@ -1,0 +1,13 @@
+127.0.0.1 - - [03/Feb/2026 02:19:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:25] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:25] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/weather.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/carousel.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/english.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/settings.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/prefectures.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /api/english/word HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 02:19:26] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /api/english/quiz HTTP/1.1" 404 -

@@ -1,8 +1,8 @@
 // api.js
 // Handles API requests, with fallback to mock data for development
 
-const API_BASE_URL = 'https://api.example.com'; // Replace with real API Gateway URL after deployment
-const USE_MOCK = true; // Set to false when backend is ready
+const API_BASE_URL = '/api'; // Use relative path for CloudFront routing
+const USE_MOCK = false; // Set to false when backend is ready
 
 // Mock Data
 const MOCK_DATA = {

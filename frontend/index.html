@@ -10,6 +10,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Chart.js -->
@@ -18,35 +23,49 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        (function() {
+            try {
+                const stored = localStorage.getItem('newsHubSettings');
+                const theme = stored ? JSON.parse(stored).theme : 'dark';
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
-<body class="bg-gray-100 min-h-screen text-gray-800">
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-gray-100 transition-colors duration-200">
 
     <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors duration-200">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-newspaper text-blue-600 text-xl"></i>
-                <h1 class="text-xl font-bold text-gray-800">News Hub</h1>
+                <h1 class="text-xl font-bold text-gray-800 dark:text-white">News Hub</h1>
             </div>
 
             <div class="flex items-center space-x-4">
                 <div class="relative hidden md:block">
-                    <input type="text" id="search-input" placeholder="ニュースを検索..." class="pl-8 pr-4 py-1 rounded-full bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 w-64 transition-all">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                    <input type="text" id="search-input" placeholder="ニュースを検索..." class="pl-8 pr-4 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 w-64 transition-all">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500 text-xs"></i>
                 </div>
-                <button id="refresh-btn" class="p-2 rounded-full hover:bg-gray-100 text-gray-600 transition-colors" title="更新">
+                <button id="refresh-btn" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors" title="更新">
                     <i class="fa-solid fa-rotate-right"></i>
                 </button>
-                <button id="settings-btn" class="p-2 rounded-full hover:bg-gray-100 text-gray-600 transition-colors" title="設定">
+                <button id="settings-btn" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors" title="設定">
                     <i class="fa-solid fa-gear"></i>
+                </button>
+                <button id="theme-toggle-btn" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors" title="テーマ切り替え">
+                    <i class="fa-solid fa-moon"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile Search -->
         <div class="md:hidden px-4 pb-3">
             <div class="relative">
-                <input type="text" id="search-input-mobile" placeholder="ニュースを検索..." class="pl-8 pr-4 py-2 rounded-lg bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 w-full">
-                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                <input type="text" id="search-input-mobile" placeholder="ニュースを検索..." class="pl-8 pr-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 w-full">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500 text-xs"></i>
             </div>
         </div>
     </header>
@@ -124,16 +143,16 @@
             <div class="lg:col-span-2 space-y-6">
 
                 <!-- News Section -->
-                <section class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                    <div class="border-b border-gray-100">
+                <section class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                    <div class="border-b border-gray-100 dark:border-gray-700">
                         <div class="flex overflow-x-auto scrollbar-hide">
                             <button class="news-tab active px-6 py-4 font-medium text-blue-600 border-b-2 border-blue-600 whitespace-nowrap transition-colors" data-category="top">トップ</button>
-                            <button class="news-tab px-6 py-4 font-medium text-gray-500 hover:text-gray-800 whitespace-nowrap transition-colors" data-category="tech">テック</button>
-                            <button class="news-tab px-6 py-4 font-medium text-gray-500 hover:text-gray-800 whitespace-nowrap transition-colors" data-category="gadget">ガジェット</button>
-                            <button class="news-tab px-6 py-4 font-medium text-gray-500 hover:text-gray-800 whitespace-nowrap transition-colors" data-category="game">ゲーム</button>
-                            <button class="news-tab px-6 py-4 font-medium text-gray-500 hover:text-gray-800 whitespace-nowrap transition-colors" data-category="indie">インディー</button>
-                            <button class="news-tab px-6 py-4 font-medium text-gray-500 hover:text-gray-800 whitespace-nowrap transition-colors" data-category="anime">アニメ</button>
-                            <button class="news-tab px-6 py-4 font-medium text-gray-500 hover:text-gray-800 whitespace-nowrap transition-colors" data-category="entertainment">エンタメ</button>
+                            <button class="news-tab px-6 py-4 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 whitespace-nowrap transition-colors" data-category="tech">テック</button>
+                            <button class="news-tab px-6 py-4 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 whitespace-nowrap transition-colors" data-category="gadget">ガジェット</button>
+                            <button class="news-tab px-6 py-4 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 whitespace-nowrap transition-colors" data-category="game">ゲーム</button>
+                            <button class="news-tab px-6 py-4 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 whitespace-nowrap transition-colors" data-category="indie">インディー</button>
+                            <button class="news-tab px-6 py-4 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 whitespace-nowrap transition-colors" data-category="anime">アニメ</button>
+                            <button class="news-tab px-6 py-4 font-medium text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 whitespace-nowrap transition-colors" data-category="entertainment">エンタメ</button>
                         </div>
                     </div>
 
@@ -172,7 +191,7 @@
                     </h2>
 
                     <!-- Sales Carousel -->
-                    <div class="bg-gray-900 rounded-xl p-4 text-white">
+                    <div class="bg-gray-900 dark:bg-gray-800 rounded-xl p-4 text-white">
                         <div class="flex justify-between items-center mb-3">
                             <h3 class="font-bold text-yellow-400"><i class="fa-solid fa-tag mr-1"></i> Specials</h3>
                             <span class="text-xs text-gray-400">Top Sales</span>
@@ -187,15 +206,15 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <!-- New Releases -->
-                        <div class="bg-white rounded-xl shadow-sm p-4">
-                            <h3 class="font-bold mb-3 border-b pb-2">New Releases</h3>
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+                            <h3 class="font-bold mb-3 border-b pb-2 dark:border-gray-700 dark:text-gray-100">New Releases</h3>
                             <div id="steam-new-container" class="space-y-3">
                                 <!-- List items -->
                             </div>
                         </div>
                         <!-- Top Sellers -->
-                        <div class="bg-white rounded-xl shadow-sm p-4">
-                            <h3 class="font-bold mb-3 border-b pb-2">Top Sellers</h3>
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+                            <h3 class="font-bold mb-3 border-b pb-2 dark:border-gray-700 dark:text-gray-100">Top Sellers</h3>
                             <div id="steam-popular-container" class="space-y-3">
                                 <!-- List items -->
                             </div>
@@ -209,7 +228,7 @@
             <div class="space-y-6">
 
                 <!-- English Learning -->
-                <section class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                <section class="bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden border border-gray-100 dark:border-gray-700">
                     <div class="bg-indigo-600 px-4 py-3 text-white flex justify-between items-center">
                         <h2 class="font-bold flex items-center">
                             <i class="fa-solid fa-book-open mr-2"></i> Today's English
@@ -217,52 +236,52 @@
                     </div>
 
                     <!-- Word of the Day -->
-                    <div class="p-4 border-b border-gray-100">
+                    <div class="p-4 border-b border-gray-100 dark:border-gray-700">
                         <div class="flex justify-between items-start mb-2">
-                            <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded">Word of the Day</span>
-                            <button id="next-word-btn" class="text-gray-400 hover:text-indigo-600"><i class="fa-solid fa-forward"></i></button>
+                            <span class="text-xs font-bold text-indigo-600 bg-indigo-50 dark:bg-gray-700 dark:text-indigo-400 px-2 py-1 rounded">Word of the Day</span>
+                            <button id="next-word-btn" class="text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"><i class="fa-solid fa-forward"></i></button>
                         </div>
                         <div id="word-container">
-                            <h3 id="english-word" class="text-3xl font-bold text-gray-800 mb-1">delegate</h3>
-                            <div class="flex items-center space-x-2 text-gray-500 text-sm mb-3">
+                            <h3 id="english-word" class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-1">delegate</h3>
+                            <div class="flex items-center space-x-2 text-gray-500 dark:text-gray-400 text-sm mb-3">
                                 <span id="english-phonetic">/ˈdɛlɪɡeɪt/</span>
-                                <button id="play-audio-btn" class="hidden text-indigo-500 hover:bg-indigo-50 rounded-full p-1"><i class="fa-solid fa-volume-high"></i></button>
+                                <button id="play-audio-btn" class="hidden text-indigo-500 hover:bg-indigo-50 dark:hover:bg-gray-700 rounded-full p-1"><i class="fa-solid fa-volume-high"></i></button>
                             </div>
-                            <p id="english-meaning" class="text-lg font-medium text-gray-800 mb-2">委任する、権限を与える</p>
+                            <p id="english-meaning" class="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">委任する、権限を与える</p>
 
-                            <div class="bg-gray-50 p-3 rounded-lg text-sm text-gray-600 italic">
+                            <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-sm text-gray-600 dark:text-gray-300 italic">
                                 "<span id="english-example">Effective managers know how to delegate tasks to their team.</span>"
                             </div>
 
-                            <div class="mt-3 pt-3 border-t border-gray-100">
+                            <div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
                                 <p class="text-xs text-gray-400">Definition: <span id="english-definition">To entrust a task or responsibility to another person.</span></p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Quick Quiz -->
-                    <div class="p-4 bg-indigo-50">
+                    <div class="p-4 bg-indigo-50 dark:bg-gray-900">
                         <div class="flex justify-between items-center mb-3">
-                            <h3 class="font-bold text-gray-700">Quick Quiz</h3>
-                            <button id="next-quiz-btn" class="text-xs text-indigo-600 font-medium hover:underline">Next Question</button>
+                            <h3 class="font-bold text-gray-700 dark:text-gray-300">Quick Quiz</h3>
+                            <button id="next-quiz-btn" class="text-xs text-indigo-600 dark:text-indigo-400 font-medium hover:underline">Next Question</button>
                         </div>
 
                         <div id="quiz-container">
-                            <p id="quiz-question" class="text-sm font-medium mb-3">What is the meaning of 'negotiate'?</p>
-                            <p id="quiz-example" class="text-xs text-gray-500 italic mb-3 hidden"></p>
+                            <p id="quiz-question" class="text-sm font-medium mb-3 dark:text-gray-200">What is the meaning of 'negotiate'?</p>
+                            <p id="quiz-example" class="text-xs text-gray-500 dark:text-gray-400 italic mb-3 hidden"></p>
                             <div id="quiz-options" class="space-y-2">
                                 <!-- Options injected here -->
-                                <button class="w-full text-left px-3 py-2 bg-white rounded border border-gray-200 text-sm hover:border-indigo-400 transition-colors">A. 無視する</button>
-                                <button class="w-full text-left px-3 py-2 bg-white rounded border border-gray-200 text-sm hover:border-indigo-400 transition-colors">B. 交渉する</button>
-                                <button class="w-full text-left px-3 py-2 bg-white rounded border border-gray-200 text-sm hover:border-indigo-400 transition-colors">C. 記録する</button>
-                                <button class="w-full text-left px-3 py-2 bg-white rounded border border-gray-200 text-sm hover:border-indigo-400 transition-colors">D. 延期する</button>
+                                <button class="w-full text-left px-3 py-2 bg-white dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 rounded border border-gray-200 text-sm hover:border-indigo-400 dark:hover:border-indigo-400 transition-colors">A. 無視する</button>
+                                <button class="w-full text-left px-3 py-2 bg-white dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 rounded border border-gray-200 text-sm hover:border-indigo-400 dark:hover:border-indigo-400 transition-colors">B. 交渉する</button>
+                                <button class="w-full text-left px-3 py-2 bg-white dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 rounded border border-gray-200 text-sm hover:border-indigo-400 dark:hover:border-indigo-400 transition-colors">C. 記録する</button>
+                                <button class="w-full text-left px-3 py-2 bg-white dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 rounded border border-gray-200 text-sm hover:border-indigo-400 dark:hover:border-indigo-400 transition-colors">D. 延期する</button>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <!-- Footer / About -->
-                <div class="text-center text-xs text-gray-400 py-4">
+                <div class="text-center text-xs text-gray-400 dark:text-gray-500 py-4">
                     <p>Personal News Hub &copy; 2024</p>
                     <p>Powered by AWS (S3, CloudFront, Lambda)</p>
                 </div>
@@ -273,36 +292,36 @@
 
     <!-- Settings Modal -->
     <div id="settings-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
-        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md mx-4 overflow-hidden">
-            <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-lg">設定</h3>
-                <button id="close-settings-btn" class="text-gray-400 hover:text-gray-600">
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-md mx-4 overflow-hidden">
+            <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
+                <h3 class="font-bold text-lg dark:text-white">設定</h3>
+                <button id="close-settings-btn" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
                     <i class="fa-solid fa-xmark text-xl"></i>
                 </button>
             </div>
             <div class="p-6 space-y-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">天気予報の地域</label>
-                    <select id="settings-prefecture" class="border rounded px-3 py-2 text-sm w-full mb-3 bg-white">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">天気予報の地域</label>
+                    <select id="settings-prefecture" class="border dark:border-gray-600 rounded px-3 py-2 text-sm w-full mb-3 bg-white dark:bg-gray-700 dark:text-white">
                         <option value="">都道府県を選択...</option>
                         <option value="custom">カスタム (緯度・経度を入力)</option>
                     </select>
 
                     <div class="grid grid-cols-2 gap-2">
-                        <input type="text" id="settings-lat" placeholder="緯度 (例: 35.6895)" class="border rounded px-3 py-2 text-sm w-full">
-                        <input type="text" id="settings-lon" placeholder="経度 (例: 139.6917)" class="border rounded px-3 py-2 text-sm w-full">
+                        <input type="text" id="settings-lat" placeholder="緯度 (例: 35.6895)" class="border dark:border-gray-600 rounded px-3 py-2 text-sm w-full dark:bg-gray-700 dark:text-white">
+                        <input type="text" id="settings-lon" placeholder="経度 (例: 139.6917)" class="border dark:border-gray-600 rounded px-3 py-2 text-sm w-full dark:bg-gray-700 dark:text-white">
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">デフォルト: 東京</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">デフォルト: 東京</p>
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">表示カテゴリ</label>
-                    <div class="space-y-2" id="settings-categories">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">表示カテゴリ</label>
+                    <div class="space-y-2 dark:text-gray-300" id="settings-categories">
                         <!-- Checkboxes injected via JS -->
                     </div>
                 </div>
             </div>
-            <div class="px-6 py-4 bg-gray-50 flex justify-end">
+            <div class="px-6 py-4 bg-gray-50 dark:bg-gray-900 flex justify-end">
                 <button id="save-settings-btn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">保存</button>
             </div>
         </div>

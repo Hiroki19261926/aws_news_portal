@@ -8,7 +8,7 @@ const DEFAULT_SETTINGS = {
         lon: 139.6917
     },
     categories: ["top", "tech", "gadget", "game", "indie", "anime", "entertainment"],
-    theme: "light"
+    theme: "dark"
 };
 
 const STORAGE_KEY = "newsHubSettings";
@@ -40,6 +40,12 @@ export const settings = {
     updateCategories(categories) {
         const current = this.get();
         current.categories = categories;
+        this.save(current);
+    },
+
+    updateTheme(theme) {
+        const current = this.get();
+        current.theme = theme;
         this.save(current);
     }
 };

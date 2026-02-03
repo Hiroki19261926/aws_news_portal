@@ -64,16 +64,16 @@ function renderList(containerId, games) {
         const el = document.createElement('a');
         el.href = game.link;
         el.target = '_blank';
-        el.className = 'flex items-center space-x-3 p-2 hover:bg-gray-50 rounded transition-colors group';
+        el.className = 'flex items-center space-x-3 p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded transition-colors group';
 
         const priceDisplay = game.price === 0 ? "Free" : `¥${game.price.toLocaleString()}`;
 
         el.innerHTML = `
             <img src="${game.image}" alt="" class="w-16 h-8 object-cover rounded shadow-sm">
             <div class="flex-1 min-w-0">
-                <h4 class="text-sm font-medium text-gray-800 truncate group-hover:text-blue-600">${game.name}</h4>
+                <h4 class="text-sm font-medium text-gray-800 dark:text-gray-100 truncate group-hover:text-blue-600">${game.name}</h4>
             </div>
-            <div class="text-sm font-bold text-gray-600">${priceDisplay}</div>
+            <div class="text-sm font-bold text-gray-600 dark:text-gray-400">${priceDisplay}</div>
         `;
         container.appendChild(el);
     });

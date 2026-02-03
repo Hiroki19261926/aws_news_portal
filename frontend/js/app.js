@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const userSettings = settings.get();
 
     // Initialize Components
+    initTheme();
     initWeather(userSettings.location);
     initNews(userSettings.categories);
     initSteam();
@@ -22,6 +23,33 @@ document.addEventListener('DOMContentLoaded', async () => {
         location.reload();
     });
 });
+
+// --- Theme Logic ---
+function initTheme() {
+    const current = settings.get();
+    applyTheme(current.theme);
+
+    const toggleBtn = document.getElementById('theme-toggle-btn');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            const newTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            applyTheme(newTheme);
+            settings.updateTheme(newTheme);
+        });
+    }
+}
+
+function applyTheme(theme) {
+    const html = document.documentElement;
+    const icon = document.querySelector('#theme-toggle-btn i');
+    if (theme === 'dark') {
+        html.classList.add('dark');
+        if (icon) icon.className = 'fa-solid fa-sun';
+    } else {
+        html.classList.remove('dark');
+        if (icon) icon.className = 'fa-solid fa-moon';
+    }
+}
 
 // --- News Logic ---
 let currentCategory = 'top';
@@ -87,10 +115,10 @@ function renderNewsLoading() {
         <div class="animate-pulse space-y-4">
             ${[1,2,3].map(() => `
             <div class="flex space-x-4">
-                <div class="bg-gray-200 h-24 w-32 rounded-lg flex-shrink-0"></div>
+                <div class="bg-gray-200 dark:bg-gray-700 h-24 w-32 rounded-lg flex-shrink-0"></div>
                 <div class="flex-1 space-y-2 py-1">
-                    <div class="h-4 bg-gray-200 rounded w-3/4"></div>
-                    <div class="h-4 bg-gray-200 rounded w-1/2"></div>
+                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4"></div>
+                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/2"></div>
                 </div>
             </div>`).join('')}
         </div>
@@ -102,7 +130,7 @@ function renderNews(newsItems) {
     container.innerHTML = '';
 
     if (!newsItems || newsItems.length === 0) {
-        container.innerHTML = '<p class="text-gray-500 text-center py-8">No news found.</p>';
+        container.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-center py-8">No news found.</p>';
         return;
     }
 
@@ -114,21 +142,21 @@ function renderNews(newsItems) {
         const el = document.createElement('a');
         el.href = item.link;
         el.target = '_blank';
-        el.className = 'flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 p-2 rounded-lg hover:bg-gray-50 transition-colors group';
+        el.className = 'flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors group';
 
         const imgHtml = item.image
-            ? `<img src="${item.image}" alt="" class="h-32 w-full md:w-32 md:h-24 object-cover rounded-lg flex-shrink-0 bg-gray-200">`
-            : `<div class="h-32 w-full md:w-32 md:h-24 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 flex-shrink-0"><i class="fa-regular fa-image"></i></div>`;
+            ? `<img src="${item.image}" alt="" class="h-32 w-full md:w-32 md:h-24 object-cover rounded-lg flex-shrink-0 bg-gray-200 dark:bg-gray-600">`
+            : `<div class="h-32 w-full md:w-32 md:h-24 bg-gray-200 dark:bg-gray-600 rounded-lg flex items-center justify-center text-gray-400 dark:text-gray-500 flex-shrink-0"><i class="fa-regular fa-image"></i></div>`;
 
         el.innerHTML = `
             ${imgHtml}
             <div class="flex-1 min-w-0">
                 <div class="flex items-center space-x-2 mb-1">
-                    <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">${item.source}</span>
-                    <span class="text-xs text-gray-400">${date}</span>
+                    <span class="text-xs font-bold text-blue-600 bg-blue-50 dark:bg-gray-700 dark:text-blue-400 px-2 py-0.5 rounded">${item.source}</span>
+                    <span class="text-xs text-gray-400 dark:text-gray-500">${date}</span>
                 </div>
-                <h3 class="font-bold text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">${item.title}</h3>
-                <p class="text-sm text-gray-500 line-clamp-2 mt-1">${item.summary.replace(/<[^>]*>/g, '')}</p>
+                <h3 class="font-bold text-gray-800 dark:text-gray-100 group-hover:text-blue-600 transition-colors line-clamp-2">${item.title}</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mt-1">${item.summary.replace(/<[^>]*>/g, '')}</p>
             </div>
         `;
         list.appendChild(el);

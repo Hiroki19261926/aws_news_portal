@@ -52,6 +52,10 @@
     animation: loading 1.5s infinite;
 }
 
+.dark .skeleton {
+    background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+}
+
 @keyframes loading {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }

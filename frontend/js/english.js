@@ -66,7 +66,7 @@ function renderQuiz(data) {
 
     data.options.forEach((opt, index) => {
         const btn = document.createElement('button');
-        btn.className = 'w-full text-left px-3 py-2 bg-white rounded border border-gray-200 text-sm hover:border-indigo-400 transition-colors';
+        btn.className = 'w-full text-left px-3 py-2 bg-white dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 rounded border border-gray-200 text-sm hover:border-indigo-400 dark:hover:border-indigo-400 transition-colors';
         // A, B, C, D labels
         const labelPrefix = String.fromCharCode(65 + index); // 65 is 'A'
         btn.textContent = `${labelPrefix}. ${opt.label}`; // label is meaning_ja
@@ -76,12 +76,12 @@ function renderQuiz(data) {
             Array.from(container.children).forEach(b => b.disabled = true);
 
             if (opt.is_correct) {
-                btn.classList.remove('bg-white', 'border-gray-200');
-                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+                btn.classList.remove('bg-white', 'border-gray-200', 'dark:bg-gray-800', 'dark:border-gray-700', 'dark:text-gray-200');
+                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800', 'dark:bg-green-900', 'dark:border-green-700', 'dark:text-green-100');
                 btn.innerHTML += ' <i class="fa-solid fa-check ml-2"></i>';
             } else {
-                btn.classList.remove('bg-white', 'border-gray-200');
-                btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+                btn.classList.remove('bg-white', 'border-gray-200', 'dark:bg-gray-800', 'dark:border-gray-700', 'dark:text-gray-200');
+                btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800', 'dark:bg-red-900', 'dark:border-red-700', 'dark:text-red-100');
                 btn.innerHTML += ' <i class="fa-solid fa-xmark ml-2"></i>';
 
                 // Highlight correct one
@@ -90,8 +90,8 @@ function renderQuiz(data) {
                 const correctIndex = data.options.findIndex(o => o.is_correct);
                 if (correctIndex !== -1) {
                     const cBtn = container.children[correctIndex];
-                    cBtn.classList.remove('bg-white', 'border-gray-200');
-                    cBtn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+                    cBtn.classList.remove('bg-white', 'border-gray-200', 'dark:bg-gray-800', 'dark:border-gray-700', 'dark:text-gray-200');
+                    cBtn.classList.add('bg-green-100', 'border-green-500', 'text-green-800', 'dark:bg-green-900', 'dark:border-green-700', 'dark:text-green-100');
                 }
             }
         };

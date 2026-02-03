@@ -1,13 +1,23 @@
-127.0.0.1 - - [03/Feb/2026 02:19:24] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:25] "GET /css/style.css HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:25] "GET /js/app.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/api.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/weather.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/carousel.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/english.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/settings.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /js/prefectures.js HTTP/1.1" 200 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] code 404, message File not found
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /api/english/word HTTP/1.1" 404 -
-127.0.0.1 - - [03/Feb/2026 02:19:26] code 404, message File not found
-127.0.0.1 - - [03/Feb/2026 02:19:26] "GET /api/english/quiz HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:29] "GET /frontend/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:29] "GET /frontend/js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:29] "GET /frontend/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /frontend/js/weather.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /frontend/js/carousel.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /frontend/js/prefectures.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /frontend/js/settings.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /frontend/js/english.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /frontend/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/weather?lat=35.6895&lon=139.6917 HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/steam/sales HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/steam/new HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/steam/popular HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/news?category=top HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/english/word HTTP/1.1" 404 -
+127.0.0.1 - - [03/Feb/2026 13:33:30] code 404, message File not found
+127.0.0.1 - - [03/Feb/2026 13:33:30] "GET /api/english/quiz HTTP/1.1" 404 -

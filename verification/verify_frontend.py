@@ -33,12 +33,25 @@ def run(playwright):
     def handle_empty(route):
          route.fulfill(status=200, body=json.dumps([]), headers={"Content-Type": "application/json"})
 
+    def handle_news_mock(route):
+        news_items = []
+        for i in range(20):
+            news_items.append({
+                "title": f"News Item {i+1} with a very long title to take up space",
+                "link": "#",
+                "published": "2024-05-15 10:00:00",
+                "source": "Mock Source",
+                "summary": "Summary of the news item. " * 5,
+                "image": "https://via.placeholder.com/150"
+            })
+        route.fulfill(status=200, body=json.dumps(news_items), headers={"Content-Type": "application/json"})
+
     def handle_dict(route):
         route.fulfill(status=200, body=json.dumps({}), headers={"Content-Type": "application/json"})
 
     page.route("**/api/weather*", handle_weather)
     page.route("**/api/steam/sales", handle_steam_sales)
-    page.route("**/api/news*", handle_empty)
+    page.route("**/api/news*", handle_news_mock)
     page.route("**/api/steam/new", handle_empty)
     page.route("**/api/steam/popular", handle_empty)
     page.route("**/api/english*", handle_dict)
